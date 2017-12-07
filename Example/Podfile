@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YJImagePickerController_Example' do
+  pod 'YJImagePickerController', :path => '../'
+
+  target 'YJImagePickerController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
