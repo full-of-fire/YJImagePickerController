@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YJImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ciS-pl-WTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="97"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHd-bM-LiB">
+                        <rect key="frame" x="81" y="0.0" width="30" height="30"/>
+                        <state key="normal" image="unSelect.png"/>
+                        <state key="selected" image="select.png"/>
+                        <connections>
+                            <action selector="selectaAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="TL3-B4-Ng4"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uHd-bM-LiB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8e9-tp-h7Y"/>
+                <constraint firstAttribute="trailing" secondItem="uHd-bM-LiB" secondAttribute="trailing" id="TzI-sj-Nba"/>
+                <constraint firstItem="ciS-pl-WTZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WK6-U9-Zqc"/>
+                <constraint firstAttribute="bottom" secondItem="ciS-pl-WTZ" secondAttribute="bottom" id="dsR-JN-ipX"/>
+                <constraint firstItem="ciS-pl-WTZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gDy-Gm-UqX"/>
+                <constraint firstAttribute="trailing" secondItem="ciS-pl-WTZ" secondAttribute="trailing" id="kKD-Ub-awc"/>
+            </constraints>
+            <size key="customSize" width="111" height="97"/>
+            <connections>
+                <outlet property="selectButton" destination="uHd-bM-LiB" id="0oT-Ok-UAa"/>
+                <outlet property="thumbnailImageVIew" destination="ciS-pl-WTZ" id="dFs-uf-o7L"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="125.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="select.png" width="30" height="30"/>
+        <image name="unSelect.png" width="30" height="30"/>
+    </resources>
+</document>

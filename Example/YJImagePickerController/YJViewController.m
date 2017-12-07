@@ -7,7 +7,9 @@
 //
 
 #import "YJViewController.h"
-
+#import "YJImagePickerController-Prefix.pch"
+#import <YJImagePickerController/YJImagePickerController.h>
+#import <YJImagePickerController/YJImagePickerController.h>
 @interface YJViewController ()
 
 @end
@@ -20,10 +22,27 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    [self showImagePicker];
+}
+
+
+- (void)showImagePicker{
+    YJImagePickerController *albumsList = [YJImagePickerController new];
+    
+    albumsList.didFinishPickingImages = ^(NSArray *images) {
+        
+        NSLog(@"====images = %@",images);
+    };
+    albumsList.didCancel = ^{
+        
+        NSLog(@"取消选择");
+    };
+    
+    
+    
+    [self presentViewController:albumsList animated:YES completion:nil];
 }
 
 @end

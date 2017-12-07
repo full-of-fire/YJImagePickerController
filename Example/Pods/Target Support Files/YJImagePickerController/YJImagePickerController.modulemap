@@ -1,0 +1,6 @@
+framework module YJImagePickerController {
+  umbrella header "YJImagePickerController-umbrella.h"
+
+  export *
+  module * { export * }
+}
