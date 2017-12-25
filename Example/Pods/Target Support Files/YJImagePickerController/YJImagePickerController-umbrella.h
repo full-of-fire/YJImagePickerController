@@ -21,8 +21,12 @@
 #import "YJImagePickerController.h"
 #import "YJImagePreviewCell.h"
 #import "YJImagePrewViewController.h"
+#import "YJMulCameraViewController.h"
 #import "YJPhotoManager.h"
+#import "YJStillImageCell.h"
 #import "YJTabBar.h"
+#import "YJUImageStillCamera.h"
+#import "YJVideoCamera.h"
 
 FOUNDATION_EXPORT double YJImagePickerControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char YJImagePickerControllerVersionString[];
