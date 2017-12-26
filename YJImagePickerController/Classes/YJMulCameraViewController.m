@@ -10,6 +10,8 @@
 #import "YJUImageStillCamera.h"
 #import "YJStillImageCell.h"
 #import "NSBundle+YJAdd.h"
+#import "YJImagePrewViewController.h"
+#import "YJImageModel.h"
 @interface YJMulCameraViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,YJStillImageCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *cameraPreView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -80,34 +82,50 @@
     if (self.didCancelBlock) {
         self.didCancelBlock();
     }
-    if (self.delegate&&[self.delegate respondsToSelector:@selector(mulCameraViewController:didFinishTakeImages:)]) {
-        [self.delegate mulCameraViewController:self didFinishTakeImages:self.takeImages];
-    }
-    if (self.didFinishTakeImagesBlock) {
-        self.didFinishTakeImagesBlock(self.takeImages);
-    }
+//    if (self.delegate&&[self.delegate respondsToSelector:@selector(mulCameraViewController:didFinishTakeImages:)]) {
+//        [self.delegate mulCameraViewController:self didFinishTakeImages:self.takeImages];
+//    }
+//    if (self.didFinishTakeImagesBlock) {
+//        self.didFinishTakeImagesBlock(self.takeImages);
+//    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)switchFlashModeAction:(UIButton *)sender {
     sender.selected = !sender.selected;
     [_camera setFlashModeOn:sender.selected];
 }
-#pragma mark UICollectionView
+#pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.takeImages.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    YJStillImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJThumbnailCell" forIndexPath:indexPath];
+    YJStillImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJStillImageCell" forIndexPath:indexPath];
     UIImage *image =  self.takeImages[indexPath.row];
     [cell setCellWithImage:image];
+    cell.delegate = self;
     return cell;
 }
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    YJImagePrewViewController *imagePireViewVC = [YJImagePrewViewController new];
+    imagePireViewVC.index = indexPath.row;
+    NSMutableArray *photoArray = [NSMutableArray array];
+    for (UIImage *image in self.takeImages) {
+        YJImageModel *imageModel = [YJImageModel new];
+        imageModel.originImage = image;
+        [photoArray addObject:imageModel];
+    }
+    imagePireViewVC.photoList = photoArray.copy;
+    [self presentViewController:imagePireViewVC animated:YES completion:nil];
+}
+
 
 #pragma mark - YJStillImageCellDelegate
 - (void)stillImageCell:(YJStillImageCell *)cell  didClickDeleteButton:(UIButton *)deleteButton {
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     [self.takeImages removeObjectAtIndex:indexPath.row];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - getters

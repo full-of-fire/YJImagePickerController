@@ -58,13 +58,14 @@
 }
 
 - (void)setCellImageModel:(id<YJImageInputProtocol>)imageModel{
-    if (imageModel.imageAsset) {
+    
+    if (imageModel.imageAsset!=nil) {
         [imageModel.imageAsset yj_requestOriginImage:^(UIImage *result, NSDictionary *info) {
             [self p_updateViewWithResult:result];
         }];
-    }else if (imageModel.originImage){
+    }else if (imageModel.originImage!=nil){
         [self p_updateViewWithResult:imageModel.originImage];
-    }else if(imageModel.imageURL){
+    }else if(imageModel.imageURL!=nil){
         //下载图片
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             NSData *imageData = [NSData dataWithContentsOfURL:imageModel.imageURL];

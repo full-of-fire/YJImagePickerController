@@ -8,6 +8,41 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+1.相册的多选功能
+```
+YJImagePickerController *albumsList = [YJImagePickerController new];
+albumsList.didFinishPickingImages = ^(NSArray *images) {
+
+NSLog(@"====images = %@",images);
+};
+albumsList.didCancel = ^{
+
+NSLog(@"取消选择");
+};
+[self presentViewController:albumsList animated:YES completion:nil];
+```
+2.多拍相机的使用
+```
+YJMulCameraViewController *camera = [YJMulCameraViewController new];
+camera.didFinishTakeImagesBlock = ^(NSArray *images) {
+
+NSLog(@"====images = %@",images);
+};
+camera.didCancelBlock = ^{
+NSLog(@"取消");
+};
+[self presentViewController:camera animated:YES completion:nil];
+
+```
+3.相册预览功能
+```
+YJImagePrewViewController *preView = [YJImagePrewViewController new];
+
+YJImageModel *model = [YJImageModel new];
+model.imageURL = [NSURL URLWithString:@"https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=4115900726,1603453606&fm=173&s=38B75894034017490198B48F030070C8&w=218&h=146&img.JPEG"];
+preView.photoList = @[model,model,model,model,model,model];
+[self presentViewController:preView animated:YES completion:nil];
+```
 
 ## Requirements
 

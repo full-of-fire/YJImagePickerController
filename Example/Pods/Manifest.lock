@@ -1,7 +1,7 @@
 PODS:
-  - YJImagePickerController (1.0.1):
-    - YJImagePickerController/Core (= 1.0.1)
-  - YJImagePickerController/Core (1.0.1)
+  - YJImagePickerController (1.0.2):
+    - YJImagePickerController/Core (= 1.0.2)
+  - YJImagePickerController/Core (1.0.2)
 
 DEPENDENCIES:
   - YJImagePickerController (from `../`)
@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  YJImagePickerController: 808159b8ef5bdac1768ae5562e00f282b07feeae
+  YJImagePickerController: d8714781e3492e66cb0e8546a69f1f0efdf09a09
 
 PODFILE CHECKSUM: 079fc2e3308157f0729af762659c8b958f999bd0
 

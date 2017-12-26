@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0868DE1A299F51BD83133FA7 /* YJImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJImagePickerController.podspec; path = ../YJImagePickerController.podspec; sourceTree = "<group>"; };
-		0E4164B69D38EBB21C992FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0868DE1A299F51BD83133FA7 /* YJImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJImagePickerController.podspec; path = ../YJImagePickerController.podspec; sourceTree = "<group>"; };
+		0E4164B69D38EBB21C992FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		11B67EA14A547AA21E9170E5 /* Pods_YJImagePickerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJImagePickerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BE896A68A7A9DEAD37DF54 /* Pods-YJImagePickerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImagePickerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJImagePickerController_Tests/Pods-YJImagePickerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YJImagePickerController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJImagePickerController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		9035B5160D55CC465D8F9DB9 /* Pods-YJImagePickerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImagePickerController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		91DEF970286D856150DDE87B /* Pods_YJImagePickerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJImagePickerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D615C1DF11B7F2C851BCD5 /* Pods-YJImagePickerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImagePickerController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJImagePickerController_Tests/Pods-YJImagePickerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E091365E215E3C660AA8EB9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E091365E215E3C660AA8EB9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FFE698B40335DF1A28E71ECB /* Pods-YJImagePickerController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImagePickerController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "full-of-fire";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7CXCX9P8W5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -388,7 +391,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/YJImagePickerController/YJImagePickerController.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/YJImagePickerController/YJImagePickerController.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -536,11 +539,12 @@
 			baseConfigurationReference = 9035B5160D55CC465D8F9DB9 /* Pods-YJImagePickerController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CXCX9P8W5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJImagePickerController/YJImagePickerController-Prefix.pch";
 				INFOPLIST_FILE = "YJImagePickerController/YJImagePickerController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuancredit.unionbank2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -551,11 +555,12 @@
 			baseConfigurationReference = FFE698B40335DF1A28E71ECB /* Pods-YJImagePickerController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7CXCX9P8W5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YJImagePickerController/YJImagePickerController-Prefix.pch";
 				INFOPLIST_FILE = "YJImagePickerController/YJImagePickerController-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuancredit.unionbank2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
