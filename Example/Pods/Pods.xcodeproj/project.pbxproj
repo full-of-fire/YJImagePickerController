@@ -7,76 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091DB1C23A0DE25DFA3C67CA624EA617 /* pz_icon-@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41ECE16A80B30FEEF244BE7AEE3E0713 /* pz_icon-@3x.png */; };
-		0DD16D475BB1CAF3A74E0B44518A205A /* YJUImageStillCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41B6A83C288F6A5C6C4FC08C257BF5 /* YJUImageStillCamera.m */; };
-		123AA5FED13B89830A019DB2B4B3ECFD /* pz-fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4200626E3F4AE736923DDB8BD932300D /* pz-fanhui@2x.png */; };
-		15EC80B4E114885ECAE59D1E4D71C530 /* YJAlbumsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F64991B0A2620FF8032BA29FB3CA6A6 /* YJAlbumsCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1BA96F77C9BEEEBC9ACA300DFB8B88 /* YJAlbumsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 301E30C3910B91003A08C95E4A5DB8AD /* YJAlbumsListViewController.xib */; };
-		24DC12AC819DF484B377573F8E49AF4A /* NSBundle+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 218BE0768B53D70CA58383D1CA48048A /* NSBundle+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E7821E6F2FE8E1CF2741955BA26324D /* unSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D47944FFD97B8C894ACA2E464CE52D2F /* unSelect@2x.png */; };
-		34512C0C7915D9AC3B5AB20896EC10D2 /* YJImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829AC7ED5C6D73603B471B54EF875AAF /* YJImagePickerController-dummy.m */; };
-		3A53FAAAB06FBE865CBA36D6B596A5B6 /* YJTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CFDB776213C42D504CCCE75F8E88E61 /* YJTabBar.xib */; };
-		3A6B5604F06A56AC53050132A66F1AAA /* YJTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4101ED9BFAABC4A3A926BB2C69B71DCD /* YJTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F4B097FA7E8B51D65E6B6CFDD92B071 /* YJImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F2756AFF17F77C26EFA2036576DE3D0B /* YJImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F8EE418B66D730BEEF1A508DB19B0CA /* YJPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775E4C9EF3E424DF58570E54EB4E8DF /* YJPhotoManager.m */; };
-		44AE170A20FABD43813A8B636DA0C0A9 /* YJStillImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F7396B8A289A98D8F5FB7EF6EBCD43 /* YJStillImageCell.m */; };
-		46C62360FB95BDDE721B2372BB08B020 /* YJImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93236A5AD11185B38EADBA46605F283D /* YJImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4700147792FB934763BF70503831F148 /* pz-gb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCEAF1592BEC50D55592D7BFBC40E08 /* pz-gb@3x.png */; };
-		4A31EE2D6D9829D2DA1E6963A0BA9FB6 /* UIView+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = F583BE6B68FAF937E2B32E1BE2F907FA /* UIView+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52DEA1BDF6AD75253FFA81168DCC998D /* YJVideoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E8CE739D4EE4FA603BF2148DEBD72C /* YJVideoCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00260D137E95A50CFE752A8596338DE2 /* YJUImageStillCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC52E6C0E9FC01BBD556D0867C65B65 /* YJUImageStillCamera.m */; };
+		05C462059A2F8C6D36703A7E0CBEFDA0 /* YJImagePreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 53192D366E5994D64855CB83AC520584 /* YJImagePreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		091DB1C23A0DE25DFA3C67CA624EA617 /* pz_icon-@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA15CD41D3BD118C273C7FA49EF80BB4 /* pz_icon-@3x.png */; };
+		0CF38009E230D1DF0FBB269D142D8E46 /* NSBundle+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F2C13DB49767C5900C7800645D7A92 /* NSBundle+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		123AA5FED13B89830A019DB2B4B3ECFD /* pz-fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B86CE23507821AA6BDCC56FB30C242F5 /* pz-fanhui@2x.png */; };
+		18A39DE8403EEC79267D5511A9AA54B9 /* YJStillImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FC950CAE1476C8D7FC33CA69442675 /* YJStillImageCell.m */; };
+		1F1BA96F77C9BEEEBC9ACA300DFB8B88 /* YJAlbumsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7598845EF4F02623CF79FF058D848 /* YJAlbumsListViewController.xib */; };
+		23249549D93DF5EC096F4356E1706C5C /* PHAssetCollection+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2128EE877B1D22B7E3CBFD7D8B2D44 /* PHAssetCollection+YJAdd.m */; };
+		23C6E793E00492BCC7A7A9BF6A680D4A /* YJUImageStillCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = D688C1D3489F13C89B81BDD10B3F4246 /* YJUImageStillCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28150941DE96D858C895C9D088F0DAEB /* YJImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = F793824FA0D53E3732F547BBE2DA3AB0 /* YJImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A3D481DF382BC91B0B9EA95EE38393 /* YJMulCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E9EEA6AB9E8C14F59F244F24395C08E6 /* YJMulCameraViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B183AF482A4BEF4019A2C2A963FA493 /* YJImageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ABF17F28D2810C73944A1B65C56803B /* YJImageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5A3D804D2EAAAA82ADD9EAA8710CFB /* YJImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC5404689B30DA6758DCCFF4CE0C756 /* YJImagePreviewCell.m */; };
+		2E7821E6F2FE8E1CF2741955BA26324D /* unSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 763E3A01A3036337A1E27839FDA56873 /* unSelect@2x.png */; };
+		30F75B8BD727FF11A0FC2D1E9353D24F /* YJAlbumsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41880691AA1B172BA2D118FD33B4D36 /* YJAlbumsListViewController.m */; };
+		3A53FAAAB06FBE865CBA36D6B596A5B6 /* YJTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513D29B543749E2FB8B1E8D955797109 /* YJTabBar.xib */; };
+		44A31F7171D8EC3053264AD721CE2C10 /* YJImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9FD0FE84D4EC8B901E4CE5D67791E2 /* YJImageCollectionViewCell.m */; };
+		4700147792FB934763BF70503831F148 /* pz-gb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 633C01F6C4EBC0A38CFD548EC2834A10 /* pz-gb@3x.png */; };
+		4931C54EAE56C96C64FEE296D5334393 /* UIView+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C5985714E25EA2ABFF6E9B083453D0 /* UIView+YJAdd.m */; };
 		5386178DA5579B0988769B691335131E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EF96D027212BDD3470757AC9107B98 /* Foundation.framework */; };
-		5A079041CC75FBCFC47FC9F64C975D17 /* YJImageCollecitonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C096EC36BE734D43B3486D376F9A8A6F /* YJImageCollecitonViewController.m */; };
-		5ABFE0377E063A1DA83946A887A58A25 /* YJUImageStillCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC8D0937954C17D0C59A8F0A05EF764 /* YJUImageStillCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B3030E2AD277C5B2335CED442004E80 /* YJImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C3632DDFE8814BC871D3A479EFD7E8 /* YJImagePreviewCell.m */; };
-		5C42681DAFC5BA4650854DB86F4FAB63 /* unSelect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA4B2A3087F212C699F1E1ABF2760B3 /* unSelect@3x.png */; };
+		566539ED4C53AE1051AAA68F38850B96 /* YJImageCollecitonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06327F31F6474D0DBA862486A23CB883 /* YJImageCollecitonViewController.m */; };
+		5BCABE21F344F0143338546C9A0F84B3 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5136F7332DEA617415C2977E446A61FA /* YJTabBar.m */; };
+		5C42681DAFC5BA4650854DB86F4FAB63 /* unSelect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FA01BA25A2CBA771A88C4228BE7D3F /* unSelect@3x.png */; };
 		5F0783C3CEF0AC128BBC8D794E7D4E08 /* Pods-YJImagePickerController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0B95908F2CCBC7E7C6B7A2C09DC36 /* Pods-YJImagePickerController_Example-dummy.m */; };
-		5F95D3CA1B8A27ABCB7FC02117C554A1 /* YJVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C1C927048E8D5D78F560D65337B6BB /* YJVideoCamera.m */; };
-		60C160FD89475A2BEC4F0FAE0787B427 /* pz-zq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78C9E727136A6D2405D2F71F404D62A9 /* pz-zq@3x.png */; };
-		6654C8847CE1F20226B077DEAC2B7264 /* pz_icon-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CB4192A6DDC8BF00EAAC87049267EE /* pz_icon-@2x.png */; };
-		6B22EE7A4BD364633924BECAD7E1E3E6 /* YJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A71500C7AFB204756EC245B71004ADFB /* YJTabBar.m */; };
-		6B3A2D54DA5FEE6205777E7CBB1773A8 /* PHAssetCollection+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C5A8CD077411329FC307AFBF5BBFF2 /* PHAssetCollection+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D3199516DA092B33F4BEACB15175DEE /* pz-sgd-closs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C93B481D8829331FAD2EE19AC1D12A6B /* pz-sgd-closs@2x.png */; };
-		7640649AA4A3460E7DF86A4CF76F0F79 /* YJImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C673A6B050D7FE9408832D1C21F9045C /* YJImageCollectionViewCell.m */; };
-		855D1B01EFC99B0442BD836C1262B157 /* PHAsset+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 361A0F812B0DFD90A4B4F3E8EE482FE5 /* PHAsset+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87B5CA4C2DFC0019D5B1BFB8194B1881 /* YJMulCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EC6B215DE21BEE5F9BC64C34FE5373 /* YJMulCameraViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60C160FD89475A2BEC4F0FAE0787B427 /* pz-zq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1263C8EA227AA6475AF344419AEE968E /* pz-zq@3x.png */; };
+		6654C8847CE1F20226B077DEAC2B7264 /* pz_icon-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438DB5863877C618545D7CA050F7ED /* pz_icon-@2x.png */; };
+		674A0AC08DC055955BA9790361B7715F /* PHAsset+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8C151053DF60499FDC4A7EF0D1C66 /* PHAsset+YJAdd.m */; };
+		692585AE895FB705CC2B13614AD88C3C /* YJImageInputProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 244E2D1435F6E47129AC8B55C21B7B72 /* YJImageInputProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D3199516DA092B33F4BEACB15175DEE /* pz-sgd-closs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A50A8A1383274ADE8916F7030FCAB96 /* pz-sgd-closs@2x.png */; };
+		83884A98168B35BC5FE8107AA598489D /* UIView+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F55C62ADB4ED3877EF4211AEF577A2B /* UIView+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85CE05B5C9439A14A4C2D8BF8EA2C9A2 /* YJAlbumsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A6DE1DD7023CB947E274DAC5C335EC /* YJAlbumsCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8798DB5600FBAF7683E942DE8E8711EF /* YJPhotoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BF8BF035E6B68225FD27179322F81A /* YJPhotoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87C916CF44CB603849A31C3999F7B908 /* YJTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD0AD37A37B4D03DB5DC38D35FE5BD1 /* YJTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D676C0C7DE8507FCC2B4A9BB69AA302 /* YJMulCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F153DBB0BAB301B9DAEA9ABC88F8530 /* YJMulCameraViewController.m */; };
 		8DA45C9B4BD2154EE22540FED29CD0F9 /* YJImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 19813D2B80EB2EB0D45CF4A95483CCE4 /* YJImagePickerController.bundle */; };
-		92D51FCDCED8E3A23F439DE83741ED05 /* YJImagePrewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC1FE0CE819DBC80D6D5663821D7E5D /* YJImagePrewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97EC3F81732F1744A897F29299D3C9E6 /* YJImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287553F4A2ADE491E1D2228BA583827 /* YJImagePickerController.m */; };
+		93BBB7F80C2109EC3EC44045E84A9BE0 /* YJImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDCB1069E90E19F9F90583F62825EF3 /* YJImagePickerController-dummy.m */; };
+		9527FFDCE21574D35BCECE3B6BCA95E7 /* YJVideoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 729389019E5BD19125653A56B3149737 /* YJVideoCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9967B733F118E7F45CF529FE0692FD6B /* Pods-YJImagePickerController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF25FA2D4651A0F8141D814F5C55ABBD /* Pods-YJImagePickerController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99EF7CFD97B8FE24A031E2CCE818AB0A /* YJImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 632BD5F9548A49EBD4FAE443CA778C0B /* YJImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D5B39AFB9159CFE095EA874856E7F3F /* YJAlbumsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 077FEBB8ECFA452FB43834BB5F0098FF /* YJAlbumsCell.m */; };
-		A216C441DA05C5E89C7E6E6A2BAE9F92 /* YJMulCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8A8C8839157CC0215199547CA04B8 /* YJMulCameraViewController.m */; };
-		A86B1C860BA403703269BA72F7F79D10 /* YJAlbumsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FF19F34E98604697908537A7108F26 /* YJAlbumsCell.xib */; };
-		AAB2459C147882F2F9EDEE9BAE1DEB15 /* YJImagePreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9412349932E0D50566544F375CD1DE85 /* YJImagePreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABE2DA1F443AE747074F6D8E61FF2A18 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006D3410DFD5E48A10E848C6D8BFD48C /* select@2x.png */; };
-		B33D1A638BE1E56451E06EA8BCFC2408 /* pz-zq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4DD93EF73BA43EA6C83304F442E143 /* pz-zq@2x.png */; };
-		B3F68ED43C8492FCF9D8E0452E3911D0 /* select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2241BAE811A0DEDB7A4CCEC0F3705B /* select@3x.png */; };
-		B5FC18C2BD78D2B9C19260BA14E632B8 /* YJImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD53E5173C5EF64872E60E125EB6C673 /* YJImageCollectionViewCell.xib */; };
-		B6618119F85F689E1BD057C8D56F1ED1 /* PHAssetCollection+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C415525EECB1CAAD4320D06F7E1640 /* PHAssetCollection+YJAdd.m */; };
+		A66BA8114B400EC6348D4D0E711ACA2B /* YJImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83363240C463F57AAE1A19F41330E882 /* YJImagePickerController.m */; };
+		A84EB2266B290A6DD1C34C04BFA69C7A /* YJImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79DAE42D614AB1650653C44EB2690983 /* YJImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A86B1C860BA403703269BA72F7F79D10 /* YJAlbumsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F90999B307AF266D49402725685A2E /* YJAlbumsCell.xib */; };
+		ABE2DA1F443AE747074F6D8E61FF2A18 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9F85C73005D036224BCD7F4A07521D1 /* select@2x.png */; };
+		AE828CFBFBB68040D7C248C8674707BD /* YJImageCollecitonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 238727A31701E46EFCCFD9CC5CC413D5 /* YJImageCollecitonViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B056865CA008778803523EB9D18FC30A /* YJPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90225E0F1CB64F054F25EC68F5B85535 /* YJPhotoManager.m */; };
+		B33D1A638BE1E56451E06EA8BCFC2408 /* pz-zq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F36B7624A187E445CC375A122CA1C40 /* pz-zq@2x.png */; };
+		B3F68ED43C8492FCF9D8E0452E3911D0 /* select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F112F672F9237ED263A022C6A73E3F7 /* select@3x.png */; };
+		B5FC18C2BD78D2B9C19260BA14E632B8 /* YJImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7506A2E7CBEA9ABEC17B924FA008012A /* YJImageCollectionViewCell.xib */; };
 		B70E6A97D51A31C79A45B1BF57458B40 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADAA1907BAF426358189E3E59DC9EF /* AVFoundation.framework */; };
-		BCC56E8C9A5B07FE8AF78655082176F8 /* pz-sgd-closs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE193D6F3EC4140A8B22BF90CFB43952 /* pz-sgd-closs@3x.png */; };
-		BEEAEC4BF8E552E1243640D8A2C7AC14 /* NSBundle+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 553D265C9E117AC8BE466C3C9CC64BFB /* NSBundle+YJAdd.m */; };
+		BCC56E8C9A5B07FE8AF78655082176F8 /* pz-sgd-closs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFA3882A0C3DBECD98654D790C8854 /* pz-sgd-closs@3x.png */; };
 		BFE3CA36541E1F215BFC021F78066E59 /* Pods-YJImagePickerController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B504F6CE180082550F97F8450B2FDCB /* Pods-YJImagePickerController_Tests-dummy.m */; };
 		C2429858CFB1313B4992CCA2CCC855E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EF96D027212BDD3470757AC9107B98 /* Foundation.framework */; };
-		CC220E2190165A397960EC8AE53A2241 /* pz-sgd-open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D37399BD44599A7DB51D4C097D4564 /* pz-sgd-open@2x.png */; };
-		D082C961F48B167859A71616636101DE /* PHAsset+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B6C2CBCA28A2B2CA529695E27E2DD2 /* PHAsset+YJAdd.m */; };
-		D3CE0DC698061CE61E224F9B03B4EF04 /* camera_ Focusing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 997CFB5829EF33CBC1DAE601AB2D0C11 /* camera_ Focusing@2x.png */; };
-		D563F7823CF6839996F85D675E1CFE38 /* YJPhotoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D8223292578B445592F153EF3A41933B /* YJPhotoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5C8E0833576B1CDEEB0AD0C677F3949 /* YJStillImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F628E6EFB3B0CA3E097CC4E112FED4 /* YJStillImageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7B300D013CDBA93BBF62EF4B002BEC3 /* pz-fanhui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACBCD190561B36605BFD02D64C8B489A /* pz-fanhui@3x.png */; };
+		C8E1E58566FFCE1C70D71B58F107E4BF /* PHAsset+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B976295C81BFE822867BAA9BFDDC389 /* PHAsset+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB7879F6E8DF4EF65ABFD83CAAD20C26 /* NSBundle+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD829A2D3FD36B4FDA28192FE6037C5 /* NSBundle+YJAdd.m */; };
+		CC220E2190165A397960EC8AE53A2241 /* pz-sgd-open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CBB6CCF4A6530DADFFE98BCD0F074C /* pz-sgd-open@2x.png */; };
+		D3CE0DC698061CE61E224F9B03B4EF04 /* camera_ Focusing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7670164522BA88E0220F1F22BB9B0B7C /* camera_ Focusing@2x.png */; };
+		D7B300D013CDBA93BBF62EF4B002BEC3 /* pz-fanhui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B3DE66769FEC145DB0B8E5F272423D9 /* pz-fanhui@3x.png */; };
+		D8346F4CF72C57F7197AD021E70AB45B /* YJImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE1009DE0C4B22A755549015B16800 /* YJImageModel.m */; };
 		D9FFA4ADBA8AF6964281E759A1D8AB1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EF96D027212BDD3470757AC9107B98 /* Foundation.framework */; };
-		DA2EE32F4894FBE53856D7EC4D3ABAF4 /* YJImagePrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150074109B17150E7BC6E50B735A6CAF /* YJImagePrewViewController.m */; };
-		DD9A6649DB2FF7BF3F65206CB3754349 /* YJMulCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EDF381766E3481C5B4CF0E4B14CFAAF /* YJMulCameraViewController.xib */; };
-		DF19D59CA5B6984E924914EA0C1717DF /* YJImageCollecitonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CCE757B696F5F5D4C8136C0C09A86A5 /* YJImageCollecitonViewController.xib */; };
-		E3620946E6E9AAB61A78AD6B12C07AA7 /* UIView+YJAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 290337AAE33634FAEEDF1BF2CEE158F9 /* UIView+YJAdd.m */; };
-		E3F794A8D5AFF62358F87E534CF7F683 /* YJThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 131777D472834082B458CF3714B239AC /* YJThumbnailCell.xib */; };
-		E4F15144FFE2B5BEBB1C5838585AA6BE /* YJAlbumsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2838E779FB99A33562807EE58E43937 /* YJAlbumsListViewController.m */; };
-		E5BA8C15D06B03E3C43AAFFF84F606B7 /* YJImageCollecitonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A660F0758ADA0CCBE0ED0256D42F7D /* YJImageCollecitonViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9A0B43AD8BDB9594261F784B66823E8 /* YJAlbumsListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A51DF7E2FC54AEBFEDC99670A2C4038 /* YJAlbumsListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9A6649DB2FF7BF3F65206CB3754349 /* YJMulCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72014C6283F7C9A0E0C16006E5843683 /* YJMulCameraViewController.xib */; };
+		DF19D59CA5B6984E924914EA0C1717DF /* YJImageCollecitonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A009E0470E95FDCFA457E0DDE63D17B /* YJImageCollecitonViewController.xib */; };
+		E27DF4831D85DAFFCCFB7935995A692D /* YJImagePrewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 465A53FC7AFD0466D5385D5056662E88 /* YJImagePrewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3F794A8D5AFF62358F87E534CF7F683 /* YJThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7DEE16FDBEEFBF404191F72533F424 /* YJThumbnailCell.xib */; };
+		E799B392C58FDA02CCBF032C67E25990 /* YJAlbumsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABD3D4EEA1126FB25C9795067FCE5B /* YJAlbumsCell.m */; };
+		EBD6FD8F7301B60C63734D48421750E4 /* YJImageCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D53622058F313E3D006ED10436141D /* YJImageCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF49CCDA919D7B4E664D8187E58A07E9 /* YJAlbumsListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DEA4E024DBA50292715C5607A5BCF68B /* YJAlbumsListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16703D6A23161278542562E24E2C124 /* Pods-YJImagePickerController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BF28B2A7C8A458723E9E6610E51BA8 /* Pods-YJImagePickerController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1927B5CEA4BD8B3B971B0CB707F731A /* pz-sgd-open@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C42B1FA25B9D09E7EFDD064EC59EE1 /* pz-sgd-open@3x.png */; };
+		F1927B5CEA4BD8B3B971B0CB707F731A /* pz-sgd-open@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59203E8C66EB04DBABD5EF17339DD0FD /* pz-sgd-open@3x.png */; };
 		F2F8160B9D7F6D8A0B6E079919F43334 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C893D8F89DD39D1B9B2C4DFC7E8326D2 /* Photos.framework */; };
-		F88D56CB80AAAF32FA75662EEEE71570 /* pz-gb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A639425B0B326165CE369B09BF39B2DA /* pz-gb@2x.png */; };
+		F61F5210728AE4094C7EC70AC1604201 /* PHAssetCollection+YJAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 972F3F5DEE25A584506A140A632549C1 /* PHAssetCollection+YJAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F88D56CB80AAAF32FA75662EEEE71570 /* pz-gb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 383DA2CCAD3401F6D0A88B860BE5A596 /* pz-gb@2x.png */; };
+		FC4F849F594E00788464EE1FBDDB68FB /* YJStillImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D23AE66E2F1627399A90812CA2784510 /* YJStillImageCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE03DB23032DD7EAE414491008A55683 /* YJVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC426049BBAED1D980419D7D21985B /* YJVideoCamera.m */; };
+		FE3737992F713F62C5DA064CFCF92906 /* YJImagePrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E07ED99477B6E710674BF53F06F3677E /* YJImagePrewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,99 +100,102 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006D3410DFD5E48A10E848C6D8BFD48C /* select@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
+		04F2C13DB49767C5900C7800645D7A92 /* NSBundle+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YJAdd.h"; path = "YJImagePickerController/Classes/NSBundle+YJAdd.h"; sourceTree = "<group>"; };
+		06327F31F6474D0DBA862486A23CB883 /* YJImageCollecitonViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImageCollecitonViewController.m; path = YJImagePickerController/Classes/YJImageCollecitonViewController.m; sourceTree = "<group>"; };
 		0724ECBAF076B5FA8EE28F1B99985826 /* Pods-YJImagePickerController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJImagePickerController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		077FEBB8ECFA452FB43834BB5F0098FF /* YJAlbumsCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAlbumsCell.m; path = YJImagePickerController/Classes/YJAlbumsCell.m; sourceTree = "<group>"; };
-		07F628E6EFB3B0CA3E097CC4E112FED4 /* YJStillImageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJStillImageCell.h; path = YJImagePickerController/Classes/YJStillImageCell.h; sourceTree = "<group>"; };
-		0FAF85AFDA1FE86AD2C53FACB7506538 /* YJImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YJImagePickerController-prefix.pch"; sourceTree = "<group>"; };
-		11B6C2CBCA28A2B2CA529695E27E2DD2 /* PHAsset+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PHAsset+YJAdd.m"; path = "YJImagePickerController/Classes/PHAsset+YJAdd.m"; sourceTree = "<group>"; };
-		131777D472834082B458CF3714B239AC /* YJThumbnailCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJThumbnailCell.xib; sourceTree = "<group>"; };
-		150074109B17150E7BC6E50B735A6CAF /* YJImagePrewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePrewViewController.m; path = YJImagePickerController/Classes/YJImagePrewViewController.m; sourceTree = "<group>"; };
-		16F8A8C8839157CC0215199547CA04B8 /* YJMulCameraViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJMulCameraViewController.m; path = YJImagePickerController/Classes/YJMulCameraViewController.m; sourceTree = "<group>"; };
-		18C1C927048E8D5D78F560D65337B6BB /* YJVideoCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJVideoCamera.m; path = YJImagePickerController/Classes/YJVideoCamera.m; sourceTree = "<group>"; };
+		0DCFA3882A0C3DBECD98654D790C8854 /* pz-sgd-closs@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-closs@3x.png"; sourceTree = "<group>"; };
+		0F112F672F9237ED263A022C6A73E3F7 /* select@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "select@3x.png"; sourceTree = "<group>"; };
+		0F55C62ADB4ED3877EF4211AEF577A2B /* UIView+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YJAdd.h"; path = "YJImagePickerController/Classes/UIView+YJAdd.h"; sourceTree = "<group>"; };
+		1263C8EA227AA6475AF344419AEE968E /* pz-zq@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-zq@3x.png"; sourceTree = "<group>"; };
+		1712709C135019AC8B2978CAFEA524B1 /* ResourceBundle-YJImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YJImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		18ABD3D4EEA1126FB25C9795067FCE5B /* YJAlbumsCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAlbumsCell.m; path = YJImagePickerController/Classes/YJAlbumsCell.m; sourceTree = "<group>"; };
 		19813D2B80EB2EB0D45CF4A95483CCE4 /* YJImagePickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YJImagePickerController.bundle; path = YJImagePickerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF0B95908F2CCBC7E7C6B7A2C09DC36 /* Pods-YJImagePickerController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YJImagePickerController_Example-dummy.m"; sourceTree = "<group>"; };
 		1E63BFE5FAE8CC990D3A67DA4AD3FC7B /* Pods-YJImagePickerController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJImagePickerController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		218BE0768B53D70CA58383D1CA48048A /* NSBundle+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YJAdd.h"; path = "YJImagePickerController/Classes/NSBundle+YJAdd.h"; sourceTree = "<group>"; };
-		23E8CE739D4EE4FA603BF2148DEBD72C /* YJVideoCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJVideoCamera.h; path = YJImagePickerController/Classes/YJVideoCamera.h; sourceTree = "<group>"; };
-		26DBD1C7D088F064C5C254B313AB0EE2 /* ResourceBundle-YJImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YJImagePickerController-Info.plist"; sourceTree = "<group>"; };
-		290337AAE33634FAEEDF1BF2CEE158F9 /* UIView+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YJAdd.m"; path = "YJImagePickerController/Classes/UIView+YJAdd.m"; sourceTree = "<group>"; };
+		238727A31701E46EFCCFD9CC5CC413D5 /* YJImageCollecitonViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageCollecitonViewController.h; path = YJImagePickerController/Classes/YJImageCollecitonViewController.h; sourceTree = "<group>"; };
+		244E2D1435F6E47129AC8B55C21B7B72 /* YJImageInputProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageInputProtocol.h; path = YJImagePickerController/Classes/YJImageInputProtocol.h; sourceTree = "<group>"; };
+		27FA01BA25A2CBA771A88C4228BE7D3F /* unSelect@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unSelect@3x.png"; sourceTree = "<group>"; };
 		292404FFBB8B169586542C716A593DCF /* Pods-YJImagePickerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJImagePickerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		301E30C3910B91003A08C95E4A5DB8AD /* YJAlbumsListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJAlbumsListViewController.xib; sourceTree = "<group>"; };
-		361A0F812B0DFD90A4B4F3E8EE482FE5 /* PHAsset+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PHAsset+YJAdd.h"; path = "YJImagePickerController/Classes/PHAsset+YJAdd.h"; sourceTree = "<group>"; };
+		29438DB5863877C618545D7CA050F7ED /* pz_icon-@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz_icon-@2x.png"; sourceTree = "<group>"; };
+		2DD0AD37A37B4D03DB5DC38D35FE5BD1 /* YJTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJTabBar.h; path = YJImagePickerController/Classes/YJTabBar.h; sourceTree = "<group>"; };
+		33D53622058F313E3D006ED10436141D /* YJImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageCollectionViewCell.h; path = YJImagePickerController/Classes/YJImageCollectionViewCell.h; sourceTree = "<group>"; };
+		383DA2CCAD3401F6D0A88B860BE5A596 /* pz-gb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-gb@2x.png"; sourceTree = "<group>"; };
+		3AB7598845EF4F02623CF79FF058D848 /* YJAlbumsListViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJAlbumsListViewController.xib; sourceTree = "<group>"; };
 		3CF1DA864E960B2B448301C1CEA02A6F /* Pods-YJImagePickerController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJImagePickerController_Example-resources.sh"; sourceTree = "<group>"; };
-		3DC1FE0CE819DBC80D6D5663821D7E5D /* YJImagePrewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePrewViewController.h; path = YJImagePickerController/Classes/YJImagePrewViewController.h; sourceTree = "<group>"; };
-		4101ED9BFAABC4A3A926BB2C69B71DCD /* YJTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJTabBar.h; path = YJImagePickerController/Classes/YJTabBar.h; sourceTree = "<group>"; };
-		41ECE16A80B30FEEF244BE7AEE3E0713 /* pz_icon-@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz_icon-@3x.png"; sourceTree = "<group>"; };
-		4200626E3F4AE736923DDB8BD932300D /* pz-fanhui@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-fanhui@2x.png"; sourceTree = "<group>"; };
-		43CB4192A6DDC8BF00EAAC87049267EE /* pz_icon-@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz_icon-@2x.png"; sourceTree = "<group>"; };
-		44D37399BD44599A7DB51D4C097D4564 /* pz-sgd-open@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-open@2x.png"; sourceTree = "<group>"; };
-		44FF19F34E98604697908537A7108F26 /* YJAlbumsCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJAlbumsCell.xib; sourceTree = "<group>"; };
-		4A51DF7E2FC54AEBFEDC99670A2C4038 /* YJAlbumsListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAlbumsListViewController.h; path = YJImagePickerController/Classes/YJAlbumsListViewController.h; sourceTree = "<group>"; };
+		3F36B7624A187E445CC375A122CA1C40 /* pz-zq@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-zq@2x.png"; sourceTree = "<group>"; };
+		465A53FC7AFD0466D5385D5056662E88 /* YJImagePrewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePrewViewController.h; path = YJImagePickerController/Classes/YJImagePrewViewController.h; sourceTree = "<group>"; };
+		48A6DE1DD7023CB947E274DAC5C335EC /* YJAlbumsCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAlbumsCell.h; path = YJImagePickerController/Classes/YJAlbumsCell.h; sourceTree = "<group>"; };
+		4ABF17F28D2810C73944A1B65C56803B /* YJImageModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageModel.h; path = YJImagePickerController/Classes/YJImageModel.h; sourceTree = "<group>"; };
+		4B3DE66769FEC145DB0B8E5F272423D9 /* pz-fanhui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-fanhui@3x.png"; sourceTree = "<group>"; };
 		4C57F2AAAC1891E1172DDEB57FCD9C49 /* Pods-YJImagePickerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJImagePickerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		553D265C9E117AC8BE466C3C9CC64BFB /* NSBundle+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+YJAdd.m"; path = "YJImagePickerController/Classes/NSBundle+YJAdd.m"; sourceTree = "<group>"; };
+		5136F7332DEA617415C2977E446A61FA /* YJTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJTabBar.m; path = YJImagePickerController/Classes/YJTabBar.m; sourceTree = "<group>"; };
+		513D29B543749E2FB8B1E8D955797109 /* YJTabBar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJTabBar.xib; sourceTree = "<group>"; };
+		53192D366E5994D64855CB83AC520584 /* YJImagePreviewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePreviewCell.h; path = YJImagePickerController/Classes/YJImagePreviewCell.h; sourceTree = "<group>"; };
 		56B4B9F7B4EAD1D223019B31C99F9E6A /* Pods-YJImagePickerController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJImagePickerController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		632BD5F9548A49EBD4FAE443CA778C0B /* YJImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePickerController.h; path = YJImagePickerController/Classes/YJImagePickerController.h; sourceTree = "<group>"; };
-		65C5A8CD077411329FC307AFBF5BBFF2 /* PHAssetCollection+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PHAssetCollection+YJAdd.h"; path = "YJImagePickerController/Classes/PHAssetCollection+YJAdd.h"; sourceTree = "<group>"; };
-		68C3632DDFE8814BC871D3A479EFD7E8 /* YJImagePreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePreviewCell.m; path = YJImagePickerController/Classes/YJImagePreviewCell.m; sourceTree = "<group>"; };
+		59203E8C66EB04DBABD5EF17339DD0FD /* pz-sgd-open@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-open@3x.png"; sourceTree = "<group>"; };
+		5A50A8A1383274ADE8916F7030FCAB96 /* pz-sgd-closs@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-closs@2x.png"; sourceTree = "<group>"; };
+		5CDCB1069E90E19F9F90583F62825EF3 /* YJImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YJImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		5CEE1009DE0C4B22A755549015B16800 /* YJImageModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImageModel.m; path = YJImagePickerController/Classes/YJImageModel.m; sourceTree = "<group>"; };
+		622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YJImagePickerController.xcconfig; sourceTree = "<group>"; };
+		633C01F6C4EBC0A38CFD548EC2834A10 /* pz-gb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-gb@3x.png"; sourceTree = "<group>"; };
+		6A009E0470E95FDCFA457E0DDE63D17B /* YJImageCollecitonViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJImageCollecitonViewController.xib; sourceTree = "<group>"; };
 		6A8A1B2680434883B6EC5366ACA33329 /* Pods_YJImagePickerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YJImagePickerController_Example.framework; path = "Pods-YJImagePickerController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B41B6A83C288F6A5C6C4FC08C257BF5 /* YJUImageStillCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJUImageStillCamera.m; path = YJImagePickerController/Classes/YJUImageStillCamera.m; sourceTree = "<group>"; };
 		6D74E1483D45A59276502F11D8EB448D /* Pods-YJImagePickerController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YJImagePickerController_Tests-resources.sh"; sourceTree = "<group>"; };
-		6EDF381766E3481C5B4CF0E4B14CFAAF /* YJMulCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJMulCameraViewController.xib; sourceTree = "<group>"; };
 		6EFCA2EA713B8CBC380C479A676CB6DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FC8D0937954C17D0C59A8F0A05EF764 /* YJUImageStillCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJUImageStillCamera.h; path = YJImagePickerController/Classes/YJUImageStillCamera.h; sourceTree = "<group>"; };
-		78C9E727136A6D2405D2F71F404D62A9 /* pz-zq@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-zq@3x.png"; sourceTree = "<group>"; };
+		72014C6283F7C9A0E0C16006E5843683 /* YJMulCameraViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJMulCameraViewController.xib; sourceTree = "<group>"; };
+		729389019E5BD19125653A56B3149737 /* YJVideoCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJVideoCamera.h; path = YJImagePickerController/Classes/YJVideoCamera.h; sourceTree = "<group>"; };
+		72D5443AA1DDD82574ED1A74BAA0F385 /* YJImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YJImagePickerController.modulemap; sourceTree = "<group>"; };
+		7506A2E7CBEA9ABEC17B924FA008012A /* YJImageCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		763E3A01A3036337A1E27839FDA56873 /* unSelect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unSelect@2x.png"; sourceTree = "<group>"; };
+		7670164522BA88E0220F1F22BB9B0B7C /* camera_ Focusing@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "camera_ Focusing@2x.png"; sourceTree = "<group>"; };
+		79DAE42D614AB1650653C44EB2690983 /* YJImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YJImagePickerController-umbrella.h"; sourceTree = "<group>"; };
 		7B504F6CE180082550F97F8450B2FDCB /* Pods-YJImagePickerController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YJImagePickerController_Tests-dummy.m"; sourceTree = "<group>"; };
 		7BA100ECF3C8B8FB376590CE53C642FB /* Pods-YJImagePickerController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YJImagePickerController_Example.modulemap"; sourceTree = "<group>"; };
-		7BCEAF1592BEC50D55592D7BFBC40E08 /* pz-gb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-gb@3x.png"; sourceTree = "<group>"; };
-		7CCE757B696F5F5D4C8136C0C09A86A5 /* YJImageCollecitonViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJImageCollecitonViewController.xib; sourceTree = "<group>"; };
-		7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YJImagePickerController.xcconfig; sourceTree = "<group>"; };
+		7D3A54333207B8B2EAD6498FCC5378C7 /* YJImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YJImagePickerController-prefix.pch"; sourceTree = "<group>"; };
+		7DC52E6C0E9FC01BBD556D0867C65B65 /* YJUImageStillCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJUImageStillCamera.m; path = YJImagePickerController/Classes/YJUImageStillCamera.m; sourceTree = "<group>"; };
 		810962FAC7F0077CA42B92761C241E13 /* Pods-YJImagePickerController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YJImagePickerController_Tests.modulemap"; sourceTree = "<group>"; };
-		829AC7ED5C6D73603B471B54EF875AAF /* YJImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YJImagePickerController-dummy.m"; sourceTree = "<group>"; };
-		82C42B1FA25B9D09E7EFDD064EC59EE1 /* pz-sgd-open@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-open@3x.png"; sourceTree = "<group>"; };
-		8775E4C9EF3E424DF58570E54EB4E8DF /* YJPhotoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJPhotoManager.m; path = YJImagePickerController/Classes/YJPhotoManager.m; sourceTree = "<group>"; };
+		82BF8BF035E6B68225FD27179322F81A /* YJPhotoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJPhotoManager.h; path = YJImagePickerController/Classes/YJPhotoManager.h; sourceTree = "<group>"; };
+		82FC950CAE1476C8D7FC33CA69442675 /* YJStillImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJStillImageCell.m; path = YJImagePickerController/Classes/YJStillImageCell.m; sourceTree = "<group>"; };
+		83363240C463F57AAE1A19F41330E882 /* YJImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePickerController.m; path = YJImagePickerController/Classes/YJImagePickerController.m; sourceTree = "<group>"; };
+		86C5985714E25EA2ABFF6E9B083453D0 /* UIView+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+YJAdd.m"; path = "YJImagePickerController/Classes/UIView+YJAdd.m"; sourceTree = "<group>"; };
 		87EF96D027212BDD3470757AC9107B98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8CFDB776213C42D504CCCE75F8E88E61 /* YJTabBar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJTabBar.xib; sourceTree = "<group>"; };
-		8F64991B0A2620FF8032BA29FB3CA6A6 /* YJAlbumsCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAlbumsCell.h; path = YJImagePickerController/Classes/YJAlbumsCell.h; sourceTree = "<group>"; };
-		9287553F4A2ADE491E1D2228BA583827 /* YJImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePickerController.m; path = YJImagePickerController/Classes/YJImagePickerController.m; sourceTree = "<group>"; };
-		93236A5AD11185B38EADBA46605F283D /* YJImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YJImagePickerController-umbrella.h"; sourceTree = "<group>"; };
+		8F153DBB0BAB301B9DAEA9ABC88F8530 /* YJMulCameraViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJMulCameraViewController.m; path = YJImagePickerController/Classes/YJMulCameraViewController.m; sourceTree = "<group>"; };
+		90225E0F1CB64F054F25EC68F5B85535 /* YJPhotoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJPhotoManager.m; path = YJImagePickerController/Classes/YJPhotoManager.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9412349932E0D50566544F375CD1DE85 /* YJImagePreviewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePreviewCell.h; path = YJImagePickerController/Classes/YJImagePreviewCell.h; sourceTree = "<group>"; };
+		972F3F5DEE25A584506A140A632549C1 /* PHAssetCollection+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PHAssetCollection+YJAdd.h"; path = "YJImagePickerController/Classes/PHAssetCollection+YJAdd.h"; sourceTree = "<group>"; };
 		98ADAA1907BAF426358189E3E59DC9EF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		997CFB5829EF33CBC1DAE601AB2D0C11 /* camera_ Focusing@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "camera_ Focusing@2x.png"; sourceTree = "<group>"; };
+		98CBB6CCF4A6530DADFFE98BCD0F074C /* pz-sgd-open@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-open@2x.png"; sourceTree = "<group>"; };
+		9B976295C81BFE822867BAA9BFDDC389 /* PHAsset+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PHAsset+YJAdd.h"; path = "YJImagePickerController/Classes/PHAsset+YJAdd.h"; sourceTree = "<group>"; };
+		9E2128EE877B1D22B7E3CBFD7D8B2D44 /* PHAssetCollection+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PHAssetCollection+YJAdd.m"; path = "YJImagePickerController/Classes/PHAssetCollection+YJAdd.m"; sourceTree = "<group>"; };
 		A14A23D8F4B847D9413D286779BF5591 /* Pods-YJImagePickerController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YJImagePickerController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A639425B0B326165CE369B09BF39B2DA /* pz-gb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-gb@2x.png"; sourceTree = "<group>"; };
-		A71500C7AFB204756EC245B71004ADFB /* YJTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJTabBar.m; path = YJImagePickerController/Classes/YJTabBar.m; sourceTree = "<group>"; };
 		A9D59484FA68441043AF52D762F81531 /* Pods-YJImagePickerController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YJImagePickerController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		ACBCD190561B36605BFD02D64C8B489A /* pz-fanhui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-fanhui@3x.png"; sourceTree = "<group>"; };
+		AA15CD41D3BD118C273C7FA49EF80BB4 /* pz_icon-@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz_icon-@3x.png"; sourceTree = "<group>"; };
+		AE9FD0FE84D4EC8B901E4CE5D67791E2 /* YJImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImageCollectionViewCell.m; path = YJImagePickerController/Classes/YJImageCollectionViewCell.m; sourceTree = "<group>"; };
 		AF25FA2D4651A0F8141D814F5C55ABBD /* Pods-YJImagePickerController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YJImagePickerController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B6D394AC432C91AEB15F3956AAEB8ACF /* YJImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YJImagePickerController.modulemap; sourceTree = "<group>"; };
 		B77298B1DEED89D098A7ED08743A64F2 /* Pods-YJImagePickerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YJImagePickerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B86CE23507821AA6BDCC56FB30C242F5 /* pz-fanhui@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-fanhui@2x.png"; sourceTree = "<group>"; };
 		B9CCA1517273F2EDFF29A103D735C34B /* Pods_YJImagePickerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YJImagePickerController_Tests.framework; path = "Pods-YJImagePickerController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD53E5173C5EF64872E60E125EB6C673 /* YJImageCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		BA7DEE16FDBEEFBF404191F72533F424 /* YJThumbnailCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJThumbnailCell.xib; sourceTree = "<group>"; };
 		BF752F7FAFB01DD6F33137100C18C959 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C096EC36BE734D43B3486D376F9A8A6F /* YJImageCollecitonViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImageCollecitonViewController.m; path = YJImagePickerController/Classes/YJImageCollecitonViewController.m; sourceTree = "<group>"; };
 		C0EC4D45B4A1B1FB99EE378A5B7E1A33 /* Pods-YJImagePickerController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YJImagePickerController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C1A660F0758ADA0CCBE0ED0256D42F7D /* YJImageCollecitonViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageCollecitonViewController.h; path = YJImagePickerController/Classes/YJImageCollecitonViewController.h; sourceTree = "<group>"; };
-		C2EC6B215DE21BEE5F9BC64C34FE5373 /* YJMulCameraViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJMulCameraViewController.h; path = YJImagePickerController/Classes/YJMulCameraViewController.h; sourceTree = "<group>"; };
-		C673A6B050D7FE9408832D1C21F9045C /* YJImageCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImageCollectionViewCell.m; path = YJImagePickerController/Classes/YJImageCollectionViewCell.m; sourceTree = "<group>"; };
 		C893D8F89DD39D1B9B2C4DFC7E8326D2 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		C93B481D8829331FAD2EE19AC1D12A6B /* pz-sgd-closs@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-closs@2x.png"; sourceTree = "<group>"; };
-		C9F7396B8A289A98D8F5FB7EF6EBCD43 /* YJStillImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJStillImageCell.m; path = YJImagePickerController/Classes/YJStillImageCell.m; sourceTree = "<group>"; };
-		CF2241BAE811A0DEDB7A4CCEC0F3705B /* select@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "select@3x.png"; sourceTree = "<group>"; };
-		CF4DD93EF73BA43EA6C83304F442E143 /* pz-zq@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-zq@2x.png"; sourceTree = "<group>"; };
-		D349D1C065612B130CE557A5FDE1407D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47944FFD97B8C894ACA2E464CE52D2F /* unSelect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unSelect@2x.png"; sourceTree = "<group>"; };
-		D4C415525EECB1CAAD4320D06F7E1640 /* PHAssetCollection+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PHAssetCollection+YJAdd.m"; path = "YJImagePickerController/Classes/PHAssetCollection+YJAdd.m"; sourceTree = "<group>"; };
+		D23AE66E2F1627399A90812CA2784510 /* YJStillImageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJStillImageCell.h; path = YJImagePickerController/Classes/YJStillImageCell.h; sourceTree = "<group>"; };
+		D41880691AA1B172BA2D118FD33B4D36 /* YJAlbumsListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAlbumsListViewController.m; path = YJImagePickerController/Classes/YJAlbumsListViewController.m; sourceTree = "<group>"; };
+		D688C1D3489F13C89B81BDD10B3F4246 /* YJUImageStillCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJUImageStillCamera.h; path = YJImagePickerController/Classes/YJUImageStillCamera.h; sourceTree = "<group>"; };
 		D6BF28B2A7C8A458723E9E6610E51BA8 /* Pods-YJImagePickerController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YJImagePickerController_Example-umbrella.h"; sourceTree = "<group>"; };
-		D8223292578B445592F153EF3A41933B /* YJPhotoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJPhotoManager.h; path = YJImagePickerController/Classes/YJPhotoManager.h; sourceTree = "<group>"; };
-		E2838E779FB99A33562807EE58E43937 /* YJAlbumsListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJAlbumsListViewController.m; path = YJImagePickerController/Classes/YJAlbumsListViewController.m; sourceTree = "<group>"; };
+		D8F90999B307AF266D49402725685A2E /* YJAlbumsCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = YJAlbumsCell.xib; sourceTree = "<group>"; };
+		D9F85C73005D036224BCD7F4A07521D1 /* select@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
+		DEA4E024DBA50292715C5607A5BCF68B /* YJAlbumsListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJAlbumsListViewController.h; path = YJImagePickerController/Classes/YJAlbumsListViewController.h; sourceTree = "<group>"; };
+		E07ED99477B6E710674BF53F06F3677E /* YJImagePrewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePrewViewController.m; path = YJImagePickerController/Classes/YJImagePrewViewController.m; sourceTree = "<group>"; };
+		E1EC426049BBAED1D980419D7D21985B /* YJVideoCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJVideoCamera.m; path = YJImagePickerController/Classes/YJVideoCamera.m; sourceTree = "<group>"; };
 		E9A98709A0C01BC9B54490FCDD472463 /* YJImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YJImagePickerController.framework; path = YJImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2756AFF17F77C26EFA2036576DE3D0B /* YJImageCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImageCollectionViewCell.h; path = YJImagePickerController/Classes/YJImageCollectionViewCell.h; sourceTree = "<group>"; };
-		F583BE6B68FAF937E2B32E1BE2F907FA /* UIView+YJAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+YJAdd.h"; path = "YJImagePickerController/Classes/UIView+YJAdd.h"; sourceTree = "<group>"; };
+		E9EEA6AB9E8C14F59F244F24395C08E6 /* YJMulCameraViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJMulCameraViewController.h; path = YJImagePickerController/Classes/YJMulCameraViewController.h; sourceTree = "<group>"; };
+		EBB8C151053DF60499FDC4A7EF0D1C66 /* PHAsset+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PHAsset+YJAdd.m"; path = "YJImagePickerController/Classes/PHAsset+YJAdd.m"; sourceTree = "<group>"; };
+		EFC5404689B30DA6758DCCFF4CE0C756 /* YJImagePreviewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YJImagePreviewCell.m; path = YJImagePickerController/Classes/YJImagePreviewCell.m; sourceTree = "<group>"; };
+		F175B461A9000A7FA6B8DC68136275C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F793824FA0D53E3732F547BBE2DA3AB0 /* YJImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YJImagePickerController.h; path = YJImagePickerController/Classes/YJImagePickerController.h; sourceTree = "<group>"; };
 		FA620F0DA60CAD99E80D019AD7E76D8D /* Pods-YJImagePickerController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YJImagePickerController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FE193D6F3EC4140A8B22BF90CFB43952 /* pz-sgd-closs@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "pz-sgd-closs@3x.png"; sourceTree = "<group>"; };
-		FEA4B2A3087F212C699F1E1ABF2760B3 /* unSelect@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "unSelect@3x.png"; sourceTree = "<group>"; };
+		FFD829A2D3FD36B4FDA28192FE6037C5 /* NSBundle+YJAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+YJAdd.m"; path = "YJImagePickerController/Classes/NSBundle+YJAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,21 +235,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BA3E47D4D987F24F948A2C303BAC40E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				44FF19F34E98604697908537A7108F26 /* YJAlbumsCell.xib */,
-				301E30C3910B91003A08C95E4A5DB8AD /* YJAlbumsListViewController.xib */,
-				7CCE757B696F5F5D4C8136C0C09A86A5 /* YJImageCollecitonViewController.xib */,
-				BD53E5173C5EF64872E60E125EB6C673 /* YJImageCollectionViewCell.xib */,
-				6EDF381766E3481C5B4CF0E4B14CFAAF /* YJMulCameraViewController.xib */,
-				8CFDB776213C42D504CCCE75F8E88E61 /* YJTabBar.xib */,
-				131777D472834082B458CF3714B239AC /* YJThumbnailCell.xib */,
-			);
-			name = Classes;
-			path = YJImagePickerController/Classes;
-			sourceTree = "<group>";
-		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,88 +243,90 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		29C6E043E9F181C1E3D2F2127C4E59A0 /* YJImagePickerController */ = {
+		13D54660050DBFE67A7312388968F3FC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4E740D73D66C1118DE9DF25DFB853543 /* Core */,
-				5862314AFD4340871C56ACE3D5FCE2AF /* Support Files */,
+				D8F90999B307AF266D49402725685A2E /* YJAlbumsCell.xib */,
+				3AB7598845EF4F02623CF79FF058D848 /* YJAlbumsListViewController.xib */,
+				6A009E0470E95FDCFA457E0DDE63D17B /* YJImageCollecitonViewController.xib */,
+				7506A2E7CBEA9ABEC17B924FA008012A /* YJImageCollectionViewCell.xib */,
+				72014C6283F7C9A0E0C16006E5843683 /* YJMulCameraViewController.xib */,
+				513D29B543749E2FB8B1E8D955797109 /* YJTabBar.xib */,
+				BA7DEE16FDBEEFBF404191F72533F424 /* YJThumbnailCell.xib */,
 			);
-			name = YJImagePickerController;
-			path = ../..;
+			name = Classes;
+			path = YJImagePickerController/Classes;
 			sourceTree = "<group>";
 		};
-		34612C6B74BD1C28757C1FD49FC07328 /* Assets */ = {
+		1997998A4DD7B6391886CB3E2A5F091D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F0D5C832D3DDE91F35D4ED7BBABDA2DB /* Images */,
+				95AD88BB753647E1DC2106FA13621D0A /* Images */,
 			);
 			name = Assets;
 			path = YJImagePickerController/Assets;
 			sourceTree = "<group>";
 		};
-		4E740D73D66C1118DE9DF25DFB853543 /* Core */ = {
+		47F3EEA3B92A7C212F06F9A731558F26 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				218BE0768B53D70CA58383D1CA48048A /* NSBundle+YJAdd.h */,
-				553D265C9E117AC8BE466C3C9CC64BFB /* NSBundle+YJAdd.m */,
-				361A0F812B0DFD90A4B4F3E8EE482FE5 /* PHAsset+YJAdd.h */,
-				11B6C2CBCA28A2B2CA529695E27E2DD2 /* PHAsset+YJAdd.m */,
-				65C5A8CD077411329FC307AFBF5BBFF2 /* PHAssetCollection+YJAdd.h */,
-				D4C415525EECB1CAAD4320D06F7E1640 /* PHAssetCollection+YJAdd.m */,
-				F583BE6B68FAF937E2B32E1BE2F907FA /* UIView+YJAdd.h */,
-				290337AAE33634FAEEDF1BF2CEE158F9 /* UIView+YJAdd.m */,
-				8F64991B0A2620FF8032BA29FB3CA6A6 /* YJAlbumsCell.h */,
-				077FEBB8ECFA452FB43834BB5F0098FF /* YJAlbumsCell.m */,
-				4A51DF7E2FC54AEBFEDC99670A2C4038 /* YJAlbumsListViewController.h */,
-				E2838E779FB99A33562807EE58E43937 /* YJAlbumsListViewController.m */,
-				C1A660F0758ADA0CCBE0ED0256D42F7D /* YJImageCollecitonViewController.h */,
-				C096EC36BE734D43B3486D376F9A8A6F /* YJImageCollecitonViewController.m */,
-				F2756AFF17F77C26EFA2036576DE3D0B /* YJImageCollectionViewCell.h */,
-				C673A6B050D7FE9408832D1C21F9045C /* YJImageCollectionViewCell.m */,
-				632BD5F9548A49EBD4FAE443CA778C0B /* YJImagePickerController.h */,
-				9287553F4A2ADE491E1D2228BA583827 /* YJImagePickerController.m */,
-				9412349932E0D50566544F375CD1DE85 /* YJImagePreviewCell.h */,
-				68C3632DDFE8814BC871D3A479EFD7E8 /* YJImagePreviewCell.m */,
-				3DC1FE0CE819DBC80D6D5663821D7E5D /* YJImagePrewViewController.h */,
-				150074109B17150E7BC6E50B735A6CAF /* YJImagePrewViewController.m */,
-				C2EC6B215DE21BEE5F9BC64C34FE5373 /* YJMulCameraViewController.h */,
-				16F8A8C8839157CC0215199547CA04B8 /* YJMulCameraViewController.m */,
-				D8223292578B445592F153EF3A41933B /* YJPhotoManager.h */,
-				8775E4C9EF3E424DF58570E54EB4E8DF /* YJPhotoManager.m */,
-				07F628E6EFB3B0CA3E097CC4E112FED4 /* YJStillImageCell.h */,
-				C9F7396B8A289A98D8F5FB7EF6EBCD43 /* YJStillImageCell.m */,
-				4101ED9BFAABC4A3A926BB2C69B71DCD /* YJTabBar.h */,
-				A71500C7AFB204756EC245B71004ADFB /* YJTabBar.m */,
-				6FC8D0937954C17D0C59A8F0A05EF764 /* YJUImageStillCamera.h */,
-				6B41B6A83C288F6A5C6C4FC08C257BF5 /* YJUImageStillCamera.m */,
-				23E8CE739D4EE4FA603BF2148DEBD72C /* YJVideoCamera.h */,
-				18C1C927048E8D5D78F560D65337B6BB /* YJVideoCamera.m */,
-				C3E4334B9C4E8D2D5D4A4E420CF0D07A /* Resources */,
+				1997998A4DD7B6391886CB3E2A5F091D /* Assets */,
+				13D54660050DBFE67A7312388968F3FC /* Classes */,
 			);
-			name = Core;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		524F5BA5A472C9292B1B1D2CEEF710BF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29C6E043E9F181C1E3D2F2127C4E59A0 /* YJImagePickerController */,
+				B145A1817A951DA31FE8AA03BB06B6C7 /* YJImagePickerController */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5862314AFD4340871C56ACE3D5FCE2AF /* Support Files */ = {
+		5347BB32B901A6AD5267D455D833D484 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D349D1C065612B130CE557A5FDE1407D /* Info.plist */,
-				26DBD1C7D088F064C5C254B313AB0EE2 /* ResourceBundle-YJImagePickerController-Info.plist */,
-				B6D394AC432C91AEB15F3956AAEB8ACF /* YJImagePickerController.modulemap */,
-				7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */,
-				829AC7ED5C6D73603B471B54EF875AAF /* YJImagePickerController-dummy.m */,
-				0FAF85AFDA1FE86AD2C53FACB7506538 /* YJImagePickerController-prefix.pch */,
-				93236A5AD11185B38EADBA46605F283D /* YJImagePickerController-umbrella.h */,
+				04F2C13DB49767C5900C7800645D7A92 /* NSBundle+YJAdd.h */,
+				FFD829A2D3FD36B4FDA28192FE6037C5 /* NSBundle+YJAdd.m */,
+				9B976295C81BFE822867BAA9BFDDC389 /* PHAsset+YJAdd.h */,
+				EBB8C151053DF60499FDC4A7EF0D1C66 /* PHAsset+YJAdd.m */,
+				972F3F5DEE25A584506A140A632549C1 /* PHAssetCollection+YJAdd.h */,
+				9E2128EE877B1D22B7E3CBFD7D8B2D44 /* PHAssetCollection+YJAdd.m */,
+				0F55C62ADB4ED3877EF4211AEF577A2B /* UIView+YJAdd.h */,
+				86C5985714E25EA2ABFF6E9B083453D0 /* UIView+YJAdd.m */,
+				48A6DE1DD7023CB947E274DAC5C335EC /* YJAlbumsCell.h */,
+				18ABD3D4EEA1126FB25C9795067FCE5B /* YJAlbumsCell.m */,
+				DEA4E024DBA50292715C5607A5BCF68B /* YJAlbumsListViewController.h */,
+				D41880691AA1B172BA2D118FD33B4D36 /* YJAlbumsListViewController.m */,
+				238727A31701E46EFCCFD9CC5CC413D5 /* YJImageCollecitonViewController.h */,
+				06327F31F6474D0DBA862486A23CB883 /* YJImageCollecitonViewController.m */,
+				33D53622058F313E3D006ED10436141D /* YJImageCollectionViewCell.h */,
+				AE9FD0FE84D4EC8B901E4CE5D67791E2 /* YJImageCollectionViewCell.m */,
+				244E2D1435F6E47129AC8B55C21B7B72 /* YJImageInputProtocol.h */,
+				4ABF17F28D2810C73944A1B65C56803B /* YJImageModel.h */,
+				5CEE1009DE0C4B22A755549015B16800 /* YJImageModel.m */,
+				F793824FA0D53E3732F547BBE2DA3AB0 /* YJImagePickerController.h */,
+				83363240C463F57AAE1A19F41330E882 /* YJImagePickerController.m */,
+				53192D366E5994D64855CB83AC520584 /* YJImagePreviewCell.h */,
+				EFC5404689B30DA6758DCCFF4CE0C756 /* YJImagePreviewCell.m */,
+				465A53FC7AFD0466D5385D5056662E88 /* YJImagePrewViewController.h */,
+				E07ED99477B6E710674BF53F06F3677E /* YJImagePrewViewController.m */,
+				E9EEA6AB9E8C14F59F244F24395C08E6 /* YJMulCameraViewController.h */,
+				8F153DBB0BAB301B9DAEA9ABC88F8530 /* YJMulCameraViewController.m */,
+				82BF8BF035E6B68225FD27179322F81A /* YJPhotoManager.h */,
+				90225E0F1CB64F054F25EC68F5B85535 /* YJPhotoManager.m */,
+				D23AE66E2F1627399A90812CA2784510 /* YJStillImageCell.h */,
+				82FC950CAE1476C8D7FC33CA69442675 /* YJStillImageCell.m */,
+				2DD0AD37A37B4D03DB5DC38D35FE5BD1 /* YJTabBar.h */,
+				5136F7332DEA617415C2977E446A61FA /* YJTabBar.m */,
+				D688C1D3489F13C89B81BDD10B3F4246 /* YJUImageStillCamera.h */,
+				7DC52E6C0E9FC01BBD556D0867C65B65 /* YJUImageStillCamera.m */,
+				729389019E5BD19125653A56B3149737 /* YJVideoCamera.h */,
+				E1EC426049BBAED1D980419D7D21985B /* YJVideoCamera.m */,
+				47F3EEA3B92A7C212F06F9A731558F26 /* Resources */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/YJImagePickerController";
+			name = Core;
 			sourceTree = "<group>";
 		};
 		65F9356E2679F204446AD15196669154 /* Products */ = {
@@ -345,6 +338,21 @@
 				E9A98709A0C01BC9B54490FCDD472463 /* YJImagePickerController.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		72328B8F6EC8DC5599E5B712519F6844 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F175B461A9000A7FA6B8DC68136275C0 /* Info.plist */,
+				1712709C135019AC8B2978CAFEA524B1 /* ResourceBundle-YJImagePickerController-Info.plist */,
+				72D5443AA1DDD82574ED1A74BAA0F385 /* YJImagePickerController.modulemap */,
+				622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */,
+				5CDCB1069E90E19F9F90583F62825EF3 /* YJImagePickerController-dummy.m */,
+				7D3A54333207B8B2EAD6498FCC5378C7 /* YJImagePickerController-prefix.pch */,
+				79DAE42D614AB1650653C44EB2690983 /* YJImagePickerController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YJImagePickerController";
 			sourceTree = "<group>";
 		};
 		7583409D5B60DE84918E10A2E47383C9 /* Pods-YJImagePickerController_Example */ = {
@@ -385,6 +393,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		95AD88BB753647E1DC2106FA13621D0A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7670164522BA88E0220F1F22BB9B0B7C /* camera_ Focusing@2x.png */,
+				B86CE23507821AA6BDCC56FB30C242F5 /* pz-fanhui@2x.png */,
+				4B3DE66769FEC145DB0B8E5F272423D9 /* pz-fanhui@3x.png */,
+				383DA2CCAD3401F6D0A88B860BE5A596 /* pz-gb@2x.png */,
+				633C01F6C4EBC0A38CFD548EC2834A10 /* pz-gb@3x.png */,
+				5A50A8A1383274ADE8916F7030FCAB96 /* pz-sgd-closs@2x.png */,
+				0DCFA3882A0C3DBECD98654D790C8854 /* pz-sgd-closs@3x.png */,
+				98CBB6CCF4A6530DADFFE98BCD0F074C /* pz-sgd-open@2x.png */,
+				59203E8C66EB04DBABD5EF17339DD0FD /* pz-sgd-open@3x.png */,
+				3F36B7624A187E445CC375A122CA1C40 /* pz-zq@2x.png */,
+				1263C8EA227AA6475AF344419AEE968E /* pz-zq@3x.png */,
+				29438DB5863877C618545D7CA050F7ED /* pz_icon-@2x.png */,
+				AA15CD41D3BD118C273C7FA49EF80BB4 /* pz_icon-@3x.png */,
+				D9F85C73005D036224BCD7F4A07521D1 /* select@2x.png */,
+				0F112F672F9237ED263A022C6A73E3F7 /* select@3x.png */,
+				763E3A01A3036337A1E27839FDA56873 /* unSelect@2x.png */,
+				27FA01BA25A2CBA771A88C4228BE7D3F /* unSelect@3x.png */,
+			);
+			name = Images;
+			path = Images;
+			sourceTree = "<group>";
+		};
 		A8BC5AD89CAF3C027760CA55F815270E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,38 +428,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C3E4334B9C4E8D2D5D4A4E420CF0D07A /* Resources */ = {
+		B145A1817A951DA31FE8AA03BB06B6C7 /* YJImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				34612C6B74BD1C28757C1FD49FC07328 /* Assets */,
-				0BA3E47D4D987F24F948A2C303BAC40E /* Classes */,
+				5347BB32B901A6AD5267D455D833D484 /* Core */,
+				72328B8F6EC8DC5599E5B712519F6844 /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F0D5C832D3DDE91F35D4ED7BBABDA2DB /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				997CFB5829EF33CBC1DAE601AB2D0C11 /* camera_ Focusing@2x.png */,
-				4200626E3F4AE736923DDB8BD932300D /* pz-fanhui@2x.png */,
-				ACBCD190561B36605BFD02D64C8B489A /* pz-fanhui@3x.png */,
-				A639425B0B326165CE369B09BF39B2DA /* pz-gb@2x.png */,
-				7BCEAF1592BEC50D55592D7BFBC40E08 /* pz-gb@3x.png */,
-				C93B481D8829331FAD2EE19AC1D12A6B /* pz-sgd-closs@2x.png */,
-				FE193D6F3EC4140A8B22BF90CFB43952 /* pz-sgd-closs@3x.png */,
-				44D37399BD44599A7DB51D4C097D4564 /* pz-sgd-open@2x.png */,
-				82C42B1FA25B9D09E7EFDD064EC59EE1 /* pz-sgd-open@3x.png */,
-				CF4DD93EF73BA43EA6C83304F442E143 /* pz-zq@2x.png */,
-				78C9E727136A6D2405D2F71F404D62A9 /* pz-zq@3x.png */,
-				43CB4192A6DDC8BF00EAAC87049267EE /* pz_icon-@2x.png */,
-				41ECE16A80B30FEEF244BE7AEE3E0713 /* pz_icon-@3x.png */,
-				006D3410DFD5E48A10E848C6D8BFD48C /* select@2x.png */,
-				CF2241BAE811A0DEDB7A4CCEC0F3705B /* select@3x.png */,
-				D47944FFD97B8C894ACA2E464CE52D2F /* unSelect@2x.png */,
-				FEA4B2A3087F212C699F1E1ABF2760B3 /* unSelect@3x.png */,
-			);
-			name = Images;
-			path = Images;
+			name = YJImagePickerController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F7EAA6AB8C77259A61829413619730F6 /* Pods-YJImagePickerController_Tests */ = {
@@ -466,28 +475,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F592D3E9A31954B04BD61F28F3256E44 /* Headers */ = {
+		E468E58995A3D07DC4841719E3EE31C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DC12AC819DF484B377573F8E49AF4A /* NSBundle+YJAdd.h in Headers */,
-				855D1B01EFC99B0442BD836C1262B157 /* PHAsset+YJAdd.h in Headers */,
-				6B3A2D54DA5FEE6205777E7CBB1773A8 /* PHAssetCollection+YJAdd.h in Headers */,
-				4A31EE2D6D9829D2DA1E6963A0BA9FB6 /* UIView+YJAdd.h in Headers */,
-				15EC80B4E114885ECAE59D1E4D71C530 /* YJAlbumsCell.h in Headers */,
-				E9A0B43AD8BDB9594261F784B66823E8 /* YJAlbumsListViewController.h in Headers */,
-				E5BA8C15D06B03E3C43AAFFF84F606B7 /* YJImageCollecitonViewController.h in Headers */,
-				3F4B097FA7E8B51D65E6B6CFDD92B071 /* YJImageCollectionViewCell.h in Headers */,
-				46C62360FB95BDDE721B2372BB08B020 /* YJImagePickerController-umbrella.h in Headers */,
-				99EF7CFD97B8FE24A031E2CCE818AB0A /* YJImagePickerController.h in Headers */,
-				AAB2459C147882F2F9EDEE9BAE1DEB15 /* YJImagePreviewCell.h in Headers */,
-				92D51FCDCED8E3A23F439DE83741ED05 /* YJImagePrewViewController.h in Headers */,
-				87B5CA4C2DFC0019D5B1BFB8194B1881 /* YJMulCameraViewController.h in Headers */,
-				D563F7823CF6839996F85D675E1CFE38 /* YJPhotoManager.h in Headers */,
-				D5C8E0833576B1CDEEB0AD0C677F3949 /* YJStillImageCell.h in Headers */,
-				3A6B5604F06A56AC53050132A66F1AAA /* YJTabBar.h in Headers */,
-				5ABFE0377E063A1DA83946A887A58A25 /* YJUImageStillCamera.h in Headers */,
-				52DEA1BDF6AD75253FFA81168DCC998D /* YJVideoCamera.h in Headers */,
+				0CF38009E230D1DF0FBB269D142D8E46 /* NSBundle+YJAdd.h in Headers */,
+				C8E1E58566FFCE1C70D71B58F107E4BF /* PHAsset+YJAdd.h in Headers */,
+				F61F5210728AE4094C7EC70AC1604201 /* PHAssetCollection+YJAdd.h in Headers */,
+				83884A98168B35BC5FE8107AA598489D /* UIView+YJAdd.h in Headers */,
+				85CE05B5C9439A14A4C2D8BF8EA2C9A2 /* YJAlbumsCell.h in Headers */,
+				EF49CCDA919D7B4E664D8187E58A07E9 /* YJAlbumsListViewController.h in Headers */,
+				AE828CFBFBB68040D7C248C8674707BD /* YJImageCollecitonViewController.h in Headers */,
+				EBD6FD8F7301B60C63734D48421750E4 /* YJImageCollectionViewCell.h in Headers */,
+				692585AE895FB705CC2B13614AD88C3C /* YJImageInputProtocol.h in Headers */,
+				2B183AF482A4BEF4019A2C2A963FA493 /* YJImageModel.h in Headers */,
+				A84EB2266B290A6DD1C34C04BFA69C7A /* YJImagePickerController-umbrella.h in Headers */,
+				28150941DE96D858C895C9D088F0DAEB /* YJImagePickerController.h in Headers */,
+				05C462059A2F8C6D36703A7E0CBEFDA0 /* YJImagePreviewCell.h in Headers */,
+				E27DF4831D85DAFFCCFB7935995A692D /* YJImagePrewViewController.h in Headers */,
+				28A3D481DF382BC91B0B9EA95EE38393 /* YJMulCameraViewController.h in Headers */,
+				8798DB5600FBAF7683E942DE8E8711EF /* YJPhotoManager.h in Headers */,
+				FC4F849F594E00788464EE1FBDDB68FB /* YJStillImageCell.h in Headers */,
+				87C916CF44CB603849A31C3999F7B908 /* YJTabBar.h in Headers */,
+				23C6E793E00492BCC7A7A9BF6A680D4A /* YJUImageStillCamera.h in Headers */,
+				9527FFDCE21574D35BCECE3B6BCA95E7 /* YJVideoCamera.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,10 +561,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BB3C5A73E12E2A0AEFD74092306E622 /* Build configuration list for PBXNativeTarget "YJImagePickerController" */;
 			buildPhases = (
-				9167D9F0704CEF9D2300D623F01C658E /* Sources */,
+				A2EBA74D6453FDA8732DB71A69BF1710 /* Sources */,
 				7E52EAE546F52E82D2B4C3BA2B2536CF /* Frameworks */,
 				6A2F974425884EA803DDC1B3E9ACFBC9 /* Resources */,
-				F592D3E9A31954B04BD61F28F3256E44 /* Headers */,
+				E468E58995A3D07DC4841719E3EE31C6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -644,28 +655,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9167D9F0704CEF9D2300D623F01C658E /* Sources */ = {
+		A2EBA74D6453FDA8732DB71A69BF1710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEAEC4BF8E552E1243640D8A2C7AC14 /* NSBundle+YJAdd.m in Sources */,
-				D082C961F48B167859A71616636101DE /* PHAsset+YJAdd.m in Sources */,
-				B6618119F85F689E1BD057C8D56F1ED1 /* PHAssetCollection+YJAdd.m in Sources */,
-				E3620946E6E9AAB61A78AD6B12C07AA7 /* UIView+YJAdd.m in Sources */,
-				9D5B39AFB9159CFE095EA874856E7F3F /* YJAlbumsCell.m in Sources */,
-				E4F15144FFE2B5BEBB1C5838585AA6BE /* YJAlbumsListViewController.m in Sources */,
-				5A079041CC75FBCFC47FC9F64C975D17 /* YJImageCollecitonViewController.m in Sources */,
-				7640649AA4A3460E7DF86A4CF76F0F79 /* YJImageCollectionViewCell.m in Sources */,
-				34512C0C7915D9AC3B5AB20896EC10D2 /* YJImagePickerController-dummy.m in Sources */,
-				97EC3F81732F1744A897F29299D3C9E6 /* YJImagePickerController.m in Sources */,
-				5B3030E2AD277C5B2335CED442004E80 /* YJImagePreviewCell.m in Sources */,
-				DA2EE32F4894FBE53856D7EC4D3ABAF4 /* YJImagePrewViewController.m in Sources */,
-				A216C441DA05C5E89C7E6E6A2BAE9F92 /* YJMulCameraViewController.m in Sources */,
-				3F8EE418B66D730BEEF1A508DB19B0CA /* YJPhotoManager.m in Sources */,
-				44AE170A20FABD43813A8B636DA0C0A9 /* YJStillImageCell.m in Sources */,
-				6B22EE7A4BD364633924BECAD7E1E3E6 /* YJTabBar.m in Sources */,
-				0DD16D475BB1CAF3A74E0B44518A205A /* YJUImageStillCamera.m in Sources */,
-				5F95D3CA1B8A27ABCB7FC02117C554A1 /* YJVideoCamera.m in Sources */,
+				CB7879F6E8DF4EF65ABFD83CAAD20C26 /* NSBundle+YJAdd.m in Sources */,
+				674A0AC08DC055955BA9790361B7715F /* PHAsset+YJAdd.m in Sources */,
+				23249549D93DF5EC096F4356E1706C5C /* PHAssetCollection+YJAdd.m in Sources */,
+				4931C54EAE56C96C64FEE296D5334393 /* UIView+YJAdd.m in Sources */,
+				E799B392C58FDA02CCBF032C67E25990 /* YJAlbumsCell.m in Sources */,
+				30F75B8BD727FF11A0FC2D1E9353D24F /* YJAlbumsListViewController.m in Sources */,
+				566539ED4C53AE1051AAA68F38850B96 /* YJImageCollecitonViewController.m in Sources */,
+				44A31F7171D8EC3053264AD721CE2C10 /* YJImageCollectionViewCell.m in Sources */,
+				D8346F4CF72C57F7197AD021E70AB45B /* YJImageModel.m in Sources */,
+				93BBB7F80C2109EC3EC44045E84A9BE0 /* YJImagePickerController-dummy.m in Sources */,
+				A66BA8114B400EC6348D4D0E711ACA2B /* YJImagePickerController.m in Sources */,
+				2B5A3D804D2EAAAA82ADD9EAA8710CFB /* YJImagePreviewCell.m in Sources */,
+				FE3737992F713F62C5DA064CFCF92906 /* YJImagePrewViewController.m in Sources */,
+				8D676C0C7DE8507FCC2B4A9BB69AA302 /* YJMulCameraViewController.m in Sources */,
+				B056865CA008778803523EB9D18FC30A /* YJPhotoManager.m in Sources */,
+				18A39DE8403EEC79267D5511A9AA54B9 /* YJStillImageCell.m in Sources */,
+				5BCABE21F344F0143338546C9A0F84B3 /* YJTabBar.m in Sources */,
+				00260D137E95A50CFE752A8596338DE2 /* YJUImageStillCamera.m in Sources */,
+				FE03DB23032DD7EAE414491008A55683 /* YJVideoCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +717,7 @@
 /* Begin XCBuildConfiguration section */
 		05187723082A91A36BD5B076C64B0C33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */;
+			baseConfigurationReference = 622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -735,7 +747,7 @@
 		};
 		106A716CD7FCB5626DC738B39C96C292 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */;
+			baseConfigurationReference = 622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YJImagePickerController";
@@ -964,7 +976,7 @@
 		};
 		C7632E7D0B8915898E58E1199B0DAA71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */;
+			baseConfigurationReference = 622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YJImagePickerController";
@@ -980,7 +992,7 @@
 		};
 		FCFC5467B2681BF6398648BDE457A977 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D9C2A6191B054F386706A872AB13B27 /* YJImagePickerController.xcconfig */;
+			baseConfigurationReference = 622BC5CF232A8929170518CDE711E597 /* YJImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

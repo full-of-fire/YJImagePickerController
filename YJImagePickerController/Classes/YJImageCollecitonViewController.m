@@ -14,6 +14,7 @@
 #import "YJImagePickerController.h"
 #import "PHAsset+YJAdd.h"
 #import "NSBundle+YJAdd.h"
+#import "YJImageModel.h"
 #define kPadding 3.0
 #define kWidth (([UIScreen mainScreen].bounds.size.width - 5 * kPadding) / 4)
 @interface YJImageCollecitonViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
@@ -126,7 +127,8 @@
 - (IBAction)previewAction:(UIButton *)sender {
     YJImagePrewViewController *preViewVC = [[YJImagePrewViewController alloc] init];
     preViewVC.index = self.lasetSeletedIndex;
-    preViewVC.photoList =  self.photoList;
+    //
+    preViewVC.photoList = [self p_covertAssetsToImageModels];;
     [self.navigationController pushViewController:preViewVC animated:YES];
     
 }
@@ -181,8 +183,19 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     YJImagePrewViewController *preViewVC = [[YJImagePrewViewController alloc] init];
     preViewVC.index = indexPath.row;
-    preViewVC.photoList =  self.photoList;
+    preViewVC.photoList =  [self p_covertAssetsToImageModels];
     [self.navigationController pushViewController:preViewVC animated:YES];
+}
+
+#pragma mark - private
+- (NSArray*)p_covertAssetsToImageModels{
+    NSMutableArray *imageModels = [NSMutableArray array];
+    for (PHAsset *asset in self.photoList) {
+        YJImageModel *model = [[YJImageModel alloc] init];
+        model.imageAsset = asset;
+        [imageModels addObject:model];
+    }
+    return imageModels.copy;
 }
 
 

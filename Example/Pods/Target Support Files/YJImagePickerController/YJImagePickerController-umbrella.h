@@ -18,6 +18,8 @@
 #import "YJAlbumsListViewController.h"
 #import "YJImageCollecitonViewController.h"
 #import "YJImageCollectionViewCell.h"
+#import "YJImageInputProtocol.h"
+#import "YJImageModel.h"
 #import "YJImagePickerController.h"
 #import "YJImagePreviewCell.h"
 #import "YJImagePrewViewController.h"

@@ -57,12 +57,48 @@
     }];
 }
 
-
-
+- (void)setCellImageModel:(id<YJImageInputProtocol>)imageModel{
+    if (imageModel.imageAsset) {
+        [imageModel.imageAsset yj_requestOriginImage:^(UIImage *result, NSDictionary *info) {
+            [self p_updateViewWithResult:result];
+        }];
+    }else if (imageModel.originImage){
+        [self p_updateViewWithResult:imageModel.originImage];
+    }else if(imageModel.imageURL){
+        //下载图片
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            NSData *imageData = [NSData dataWithContentsOfURL:imageModel.imageURL];
+            UIImage *image = [UIImage imageWithData:imageData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self p_updateViewWithResult:image];
+            });
+        });
+    }
+}
+#pragma mark - private
+- (void)p_updateViewWithResult:(UIImage*)result{
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
+    CGFloat imgWidth = result.size.width;
+    CGFloat imgHeight = result.size.height;
+    CGFloat w;
+    CGFloat h;
+    imgHeight = width / imgWidth * imgHeight;
+    if (imgHeight > height) {
+        w = height / result.size.height * imgWidth;
+        h = height;
+    }else {
+        w = width;
+        h = imgHeight;
+    }
+    _imageView.frame = CGRectMake(0, 0, w, h);
+    _imageView.center = CGPointMake(width / 2, height / 2);
+    _imageCenter = _imageView.center;
+    _imageView.image = result;
+    _scrollView.contentSize  =  CGSizeMake(width, h);
+}
 #pragma mark - actions
-
 - (void)singleTapAction:(UITapGestureRecognizer*)singleTap{
-
     NSLog(@"我是单机手势");
     if ([self.delegate respondsToSelector:@selector(imagePreviewCell:singleTapAction:)]) {
         [self.delegate imagePreviewCell:self singleTapAction:singleTap];

@@ -13,8 +13,8 @@
 #import "YJPhotoManager.h"
 #import "YJImagePickerController.h"
 #import "PHAsset+YJAdd.h"
-
 #import "NSBundle+YJAdd.h"
+#import "YJImageModel.h"
 const CGFloat kNaviBarHeight = 64;
 const CGFloat kTabBarHeight = 49;
 @interface YJImagePrewViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -24,7 +24,7 @@ const CGFloat kTabBarHeight = 49;
 @property (nonatomic,strong) UIButton *selectButton;
 /** collection */
 @property (nonatomic,strong) UICollectionView *collectionView;
-
+@property(strong,nonatomic) UILabel *titleLabel;
 @end
 @implementation YJImagePrewViewController
 
@@ -32,7 +32,13 @@ const CGFloat kTabBarHeight = 49;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setNavigaitionItems];
+    if (self.navigationController) {
+        [self setNavigaitionItems];
+    }
+    else{
+        [self addNavigationBar];
+    }
+    
     [self addSubViews];
     [self setTabNums];
 }
@@ -58,15 +64,49 @@ const CGFloat kTabBarHeight = 49;
     
 }
 
+- (void)addNavigationBar{
+    UIView *naviContentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIView yj_screenWidth], 64)];
+    naviContentView.backgroundColor = [UIColor colorWithRed:(34/255.0) green:(34/255.0)  blue:(34/255.0) alpha:1.0];
+    [self.view addSubview:naviContentView];
+    // 返回按钮
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    backButton.frame = CGRectMake(10, 20, 44, 44);
+    [naviContentView addSubview:backButton];
+    //中间标题
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.font = [UIFont systemFontOfSize:16];
+    titleLabel.textColor = [UIColor whiteColor];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.frame = CGRectMake(([UIView yj_screenWidth] - 100)/2 , 20, 100, 44);
+    _titleLabel = titleLabel;
+    [naviContentView addSubview:titleLabel];
+    [self updateTitle];
+}
 
 - (void)updateTitle{
-    self.title = [NSString stringWithFormat:@"%d/%d",(self.index+1),self.photoList.count];
+    if (self.navigationController) {
+        self.title = [NSString stringWithFormat:@"%d/%d",(self.index+1),self.photoList.count];
+    }else{
+        self.titleLabel.text = [NSString stringWithFormat:@"%d/%d",(self.index+1),self.photoList.count];
+    }
 }
 
 - (void)setTabNums{
-    _tabBar.selectNumLabel.hidden = ![[YJPhotoManager sharedInstance] selectedAsset].count;
-    _tabBar.selectNumLabel.text = [NSString stringWithFormat:@"%d",[[YJPhotoManager sharedInstance] selectedAsset].count];
-    _tabBar.finishButton.enabled = [[YJPhotoManager sharedInstance] selectedAsset].count;
+    id<YJImageInputProtocol> inputImage = self.photoList.firstObject;
+    if (inputImage.imageAsset) {
+        _tabBar.selectNumLabel.hidden = ![[YJPhotoManager sharedInstance] selectedAsset].count;
+        _tabBar.selectNumLabel.text = [NSString stringWithFormat:@"%d",[[YJPhotoManager sharedInstance] selectedAsset].count];
+        _tabBar.finishButton.enabled = [[YJPhotoManager sharedInstance] selectedAsset].count;
+    }else{
+        _selectButton.hidden = YES;
+        _tabBar.finishButton.hidden = YES;
+        _tabBar.selectNumLabel.hidden = YES;
+        _tabBar.hidden = YES;
+    }
+  
 }
 
 - (void)updateSelectButtonState{
@@ -110,13 +150,19 @@ const CGFloat kTabBarHeight = 49;
     [self.view addSubview:_tabBar];
     
 }
+#pragma mark - action
+- (void)backAction:(UIButton*)backButton{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.photoList.count;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YJImagePreviewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJImagePreviewCell" forIndexPath:indexPath];
-    [cell setCellWithAsset:self.photoList[indexPath.row]];
+    [cell setCellImageModel:self.photoList[indexPath.row]];
     return cell;
 }
 
@@ -130,11 +176,16 @@ const CGFloat kTabBarHeight = 49;
 #pragma mark - actions
 - (void)selectAction:(UIButton*)btn{
     btn.selected = !btn.selected;
+    YJImageModel *imageModel = self.photoList[self.index];
     if (btn.selected) {
-        [[YJPhotoManager sharedInstance] addAsset:self.photoList[self.index]];
+        if (imageModel.imageAsset) {
+            [[YJPhotoManager sharedInstance] addAsset:imageModel.imageAsset];
+        }
     }
     else{
-        [[YJPhotoManager sharedInstance] removeAsset:self.photoList[self.index]];
+        if (imageModel.imageAsset) {
+            [[YJPhotoManager sharedInstance] removeAsset:imageModel.imageAsset];
+        }
     }
     [self setTabNums];
 }
@@ -150,7 +201,16 @@ const CGFloat kTabBarHeight = 49;
         flowLayout.minimumLineSpacing = 0;
         flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
         flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, [UIView yj_screenWidth], [UIView yj_screenHeight]) collectionViewLayout:flowLayout];
+        CGFloat top = 0;
+        CGFloat tabHeight = 0;
+        if (self.navigationController) {
+            top = 0;
+            tabHeight = kTabBarHeight;
+        }else{
+            top = 64;
+            tabHeight = 0;
+        }
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, top, [UIView yj_screenWidth], [UIView yj_screenHeight] - top - tabHeight) collectionViewLayout:flowLayout];
         collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         collectionView.backgroundColor = [UIColor whiteColor];
         collectionView.dataSource = self;

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "YJImageInputProtocol.h"
 @interface YJImagePrewViewController : UIViewController
 /** list */
-@property (nonatomic,strong) NSArray *photoList;
+@property (nonatomic,strong) NSArray<id<YJImageInputProtocol>> *photoList;
 /** index */
 @property (nonatomic,assign) NSUInteger index;
 @end

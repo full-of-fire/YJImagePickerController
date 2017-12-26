@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YJImageInputProtocol.h"
 @class PHAsset;
 @class YJImagePreviewCell;
 @protocol YJImagePreviewCellDelegate <NSObject>
@@ -18,4 +19,5 @@
 /** delegate */
 @property (nonatomic,weak) id<YJImagePreviewCellDelegate> delegate;
 - (void)setCellWithAsset:(PHAsset*)asset;
+- (void)setCellImageModel:(id<YJImageInputProtocol>)imageModel;
 @end
