@@ -131,10 +131,8 @@ const CGFloat kTabBarHeight = 49;
         YJImagePickerController *picker = (YJImagePickerController*)weakSelf.navigationController;
         NSMutableArray *pickedImages = [NSMutableArray array];
         for (PHAsset *asset in [[YJPhotoManager sharedInstance] selectedAsset]) {
-            UIImage *originImage = [asset yj_originImage];
-            if (originImage) {
-                [pickedImages addObject:originImage];
-            }
+            id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:asset];
+            [pickedImages addObject:imageModel];
         }
         if (picker.pickDelegate&&[picker.pickDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingImages:)]) {
             [picker.pickDelegate imagePickerController:picker didFinishPickingImages:[pickedImages copy]];

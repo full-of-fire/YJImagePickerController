@@ -7,12 +7,15 @@
 //
 
 #import "YJViewController.h"
-#import "YJImagePickerController-Prefix.pch"
+//#import "YJImagePickerController-Prefix.pch"
 #import <YJImagePickerController/YJImagePickerController.h>
 #import <YJImagePickerController/YJImagePickerController.h>
 #import <YJImagePickerController/YJImagePrewViewController.h>
 #import <YJImagePickerController/YJImageModel.h>
 #import <YJImagePickerController/YJMulCameraViewController.h>
+//#import <YJImagePickerController/YJImagePicker.h>
+
+
 
 #import <AVFoundation/AVFoundation.h>
 @interface YJViewController ()
@@ -36,6 +39,7 @@
 }
 - (IBAction)testAction:(UIButton *)sender {
     [self showMulCamera];
+//    [self showImagePicker];
 }
 
 - (void)showPreViewImage {

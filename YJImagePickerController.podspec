@@ -20,21 +20,18 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'full-of-fire' => '591730822@qq.com' }
   s.source           = { :git => 'https://github.com/full-of-fire/YJImagePickerController.git', :tag => s.version.to_s }
-  s.default_subspec = 'Core'
-  s.subspec 'Core' do |core|
-    core.source_files = 'YJImagePickerController/Classes/**/*.{h,m}'
-    core.resource_bundles = {
+  s.source_files = 'YJImagePickerController/Classes/**/*.{h,m}'
+  s.resource_bundles = {
       'YJImagePickerController' => ['YJImagePickerController/Classes/**/*.{xib}','YJImagePickerController/Assets/**/*.png']
 
     }
-  end
 
   
   # s.resource_bundles = {
   #   'YJImagePickerController' => ['YJImagePickerController/Assets/*.png']
   # }
 
-  s.public_header_files = 'YJImagePickerController/YJImagePicker.h'
+  # s.public_header_files = 'YJImagePickerController/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

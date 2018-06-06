@@ -31,8 +31,10 @@
 }
 
 - (void)setCellWithImageModel:(id<YJImageInputProtocol>)imageModel {
+    
+    __weak typeof(self) weakSelf = self;
     [imageModel.imageAsset yj_requestImageForTargetSize:CGSizeMake(100, 100) resultHandler:^(UIImage *result, NSDictionary *info) {
-        _thumbnailImageView.image = result;
+        weakSelf.thumbnailImageView.image = result;
     }];
 }
 

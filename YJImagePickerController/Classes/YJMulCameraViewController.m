@@ -176,6 +176,7 @@
     YJStillImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJStillImageCell" forIndexPath:indexPath];
     id<YJImageInputProtocol> imageModel =  self.takeImages[indexPath.row];
     [cell setCellWithImageModel:imageModel];
+    
     cell.delegate = self;
     return cell;
 }
@@ -183,13 +184,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     YJImagePrewViewController *imagePireViewVC = [YJImagePrewViewController new];
     imagePireViewVC.index = indexPath.row;
-    NSMutableArray *photoArray = [NSMutableArray array];
-    for (UIImage *image in self.takeImages) {
-        YJImageModel *imageModel = [YJImageModel new];
-        imageModel.originImage = image;
-        [photoArray addObject:imageModel];
-    }
-    imagePireViewVC.photoList = photoArray.copy;
+    imagePireViewVC.photoList = self.takeImages;
     [self presentViewController:imagePireViewVC animated:YES completion:nil];
 }
 

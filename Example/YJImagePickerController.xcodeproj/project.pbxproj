@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0868DE1A299F51BD83133FA7 /* YJImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJImagePickerController.podspec; path = ../YJImagePickerController.podspec; sourceTree = "<group>"; };
+		0868DE1A299F51BD83133FA7 /* YJImagePickerController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJImagePickerController.podspec; path = ../YJImagePickerController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E4164B69D38EBB21C992FEA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		11B67EA14A547AA21E9170E5 /* Pods_YJImagePickerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJImagePickerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BE896A68A7A9DEAD37DF54 /* Pods-YJImagePickerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImagePickerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJImagePickerController_Tests/Pods-YJImagePickerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,7 +208,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				94086E8B484E5F7BEB561218 /* [CP] Embed Pods Frameworks */,
-				EDE11557C6EE58343509461B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,8 +226,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				7227E230B294CA7A0F483BF3 /* [CP] Embed Pods Frameworks */,
-				DEBBEF36DF82D04420599F5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,21 +333,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7227E230B294CA7A0F483BF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Tests/Pods-YJImagePickerController_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		94086E8B484E5F7BEB561218 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,39 +349,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEBBEF36DF82D04420599F5D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Tests/Pods-YJImagePickerController_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDE11557C6EE58343509461B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/YJImagePickerController/YJImagePickerController.bundle,
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJImagePickerController_Example/Pods-YJImagePickerController_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

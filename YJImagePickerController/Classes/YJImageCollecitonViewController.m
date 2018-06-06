@@ -141,6 +141,8 @@
         id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:asset];
         [pickedImages addObject:imageModel];
     }
+    
+    
     if (picker.pickDelegate&&[picker.pickDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingImages:)]) {
         [picker.pickDelegate imagePickerController:picker didFinishPickingImages:[pickedImages copy]];
     }
