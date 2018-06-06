@@ -18,4 +18,5 @@
 @property(weak,nonatomic) id<YJMulCameraViewController> delegate;
 @property(copy,nonatomic) void(^didFinishTakeImagesBlock)(NSArray<id<YJImageInputProtocol>>*images);
 @property(copy,nonatomic) void(^didCancelBlock)();
+- (void)setImages:(NSArray*)images;
 @end

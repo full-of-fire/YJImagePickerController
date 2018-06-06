@@ -196,6 +196,13 @@
     [self.collectionView reloadData];
 }
 
+#pragma mark - setters
+- (void)setImages:(NSArray *)images {
+    self.takeImages = images.mutableCopy;
+    [self.collectionView reloadData];
+}
+
+
 #pragma mark - getters
 - (NSMutableArray*)takeImages{
     if (_takeImages == nil) {
