@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJImagePickerController'
-  s.version          = '1.0.3'
+  s.version          = '1.1.0'
   s.summary          = 'iOS8以上一个简单图片选择封装,支持拍照和相册选择'
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #   'YJImagePickerController' => ['YJImagePickerController/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'YJImagePickerController/YJImagePicker.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
