@@ -7,7 +7,7 @@
 //
 
 #import "PHAsset+YJAdd.h"
-
+#import "UIImage+YJAdd.h"
 @implementation PHAsset (YJAdd)
 
 - (void)yj_requestOriginImage:(void(^)(UIImage* result,NSDictionary *info))resultHandler{
@@ -33,10 +33,62 @@
     option.synchronous = YES;
     __block UIImage *originImage;
     [[PHImageManager defaultManager] requestImageForAsset:self targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeDefault options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-       originImage = result;
+        
+        //修复iphon5图片不能加载的问题
+        BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey]);
+        if (downloadFinined && result) {
+            originImage = result;
+        }
+        // Download image from iCloud / 从iCloud下载图片
+        if ([info objectForKey:PHImageResultIsInCloudKey] && !result) {
+            PHImageRequestOptions *downOption = [[PHImageRequestOptions alloc]init];
+            downOption.networkAccessAllowed = YES;
+            downOption.synchronous = YES;
+            downOption.resizeMode = PHImageRequestOptionsResizeModeFast;
+            [[PHImageManager defaultManager] requestImageDataForAsset:self options:downOption resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+                UIImage *resultImage = [UIImage imageWithData:imageData scale:0.1];
+                originImage = resultImage;
+                
+            }];
+        }
+        
     }];
     return originImage;
 }
+
+- (UIImage*)yj_thumbnailImageTargetSize:(CGSize)size{
+    
+    PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];
+    option.synchronous = YES;
+    __block UIImage *originImage;
+    [[PHImageManager defaultManager] requestImageForAsset:self targetSize:size contentMode:PHImageContentModeDefault options:option resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+        
+        //修复iphon5图片不能加载的问题
+        BOOL downloadFinined = (![[info objectForKey:PHImageCancelledKey] boolValue] && ![info objectForKey:PHImageErrorKey]);
+        if (downloadFinined && result) {
+            originImage = result;
+        }
+        // Download image from iCloud / 从iCloud下载图片
+        if ([info objectForKey:PHImageResultIsInCloudKey] && !result) {
+            PHImageRequestOptions *downOption = [[PHImageRequestOptions alloc]init];
+            downOption.networkAccessAllowed = YES;
+            downOption.synchronous = YES;
+            downOption.resizeMode = PHImageRequestOptionsResizeModeFast;
+            [[PHImageManager defaultManager] requestImageDataForAsset:self options:downOption resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+                UIImage *resultImage = [UIImage imageWithData:imageData scale:0.1];
+                resultImage = [resultImage yj_thumbnailImageTargetSize:size];
+                originImage = resultImage;
+                
+            }];
+        }
+        
+    }];
+    return originImage;
+}
+
+
+
+
 
 - (void)yj_getOriginImageSize:(void(^)(NSString*resultString))resultHandler{
     PHImageRequestOptions *option = [[PHImageRequestOptions alloc] init];

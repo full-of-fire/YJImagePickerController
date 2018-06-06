@@ -7,7 +7,7 @@
 //
 
 #import "YJStillImageCell.h"
-
+#import "PHAsset+YJAdd.h"
 @interface YJStillImageCell()
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnailImageView;
 
@@ -28,6 +28,12 @@
 
 - (void)setCellWithImage:(UIImage *)image {
     _thumbnailImageView.image = image;
+}
+
+- (void)setCellWithImageModel:(id<YJImageInputProtocol>)imageModel {
+    [imageModel.imageAsset yj_requestImageForTargetSize:CGSizeMake(100, 100) resultHandler:^(UIImage *result, NSDictionary *info) {
+        _thumbnailImageView.image = result;
+    }];
 }
 
 @end

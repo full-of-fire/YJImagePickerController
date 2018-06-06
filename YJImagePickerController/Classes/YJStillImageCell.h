@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YJImageInputProtocol.h"
 @class YJStillImageCell;
 @protocol YJStillImageCellDelegate <NSObject>
 @optional
@@ -15,4 +16,7 @@
 @interface YJStillImageCell : UICollectionViewCell
 @property(weak,nonatomic) id<YJStillImageCellDelegate> delegate;
 - (void)setCellWithImage:(UIImage*)image;
+
+- (void)setCellWithImageModel:(id<YJImageInputProtocol>)imageModel;
+
 @end

@@ -12,8 +12,8 @@
 #import "YJPhotoManager.h"
 #import "YJImageCollecitonViewController.h"
 #import "YJImagePickerController.h"
-
 #import "NSBundle+YJAdd.h"
+#import "YJPermissionPhotos.h"
 @interface YJAlbumsListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 /** 相册数组 */
@@ -40,9 +40,20 @@
 #pragma mark - viewLife
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [YJPermissionPhotos authorizeWithCompletion:^(BOOL granted, BOOL firstTime) {
+        
+        if (!granted) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请开启相册权限" delegate:nil  cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+            [alertView show];
+        }
+    }];
+    
     // Do any additional setup after loading the view from its nib.
     NSBundle *bundle = [NSBundle yj_frameworkBundleWithClass:self.class];
     [self.tableView registerNib:[UINib nibWithNibName:@"YJAlbumsCell" bundle:bundle] forCellReuseIdentifier:@"YJAlbumsCell"];
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.tableHeaderView = [UIView new];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, 0, 44, 44);
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -53,6 +64,7 @@
     self.automaticallyAdjustsScrollViewInsets = YES;
     
     self.title = @"相册";
+    
     
 }
 - (void)cancleAction{
@@ -85,6 +97,8 @@
     YJImageCollecitonViewController *imageCollectionVC = [YJImageCollecitonViewController imageCollecitonViewController:collection];
     [self.navigationController pushViewController:imageCollectionVC animated:YES];
 }
+
+
 
 
 

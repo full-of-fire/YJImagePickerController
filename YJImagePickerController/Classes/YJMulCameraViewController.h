@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YJImageInputProtocol.h"
 @class YJMulCameraViewController;
 @protocol YJMulCameraViewController <NSObject>
 @optional
-- (void)mulCameraViewController:(YJMulCameraViewController *)mulCamera didFinishTakeImages:(NSArray*)images;
+- (void)mulCameraViewController:(YJMulCameraViewController *)mulCamera didFinishTakeImages:(NSArray<id<YJImageInputProtocol>>*)images;
 - (void)mulCameraViewControllerDidCancel:(YJMulCameraViewController*)mulCamera;
 @end
 @interface YJMulCameraViewController : UIViewController
 @property(weak,nonatomic) id<YJMulCameraViewController> delegate;
-@property(copy,nonatomic) void(^didFinishTakeImagesBlock)(NSArray*images);
+@property(copy,nonatomic) void(^didFinishTakeImagesBlock)(NSArray<id<YJImageInputProtocol>>*images);
 @property(copy,nonatomic) void(^didCancelBlock)();
 @end

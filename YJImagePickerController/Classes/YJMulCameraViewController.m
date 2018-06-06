@@ -12,6 +12,8 @@
 #import "NSBundle+YJAdd.h"
 #import "YJImagePrewViewController.h"
 #import "YJImageModel.h"
+#import "YJPermissionPhotos.h"
+#import "YJPermissionCamera.h"
 @interface YJMulCameraViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,YJStillImageCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *cameraPreView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -33,7 +35,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpCamera];
+    
+    [YJPermissionCamera authorizeWithCompletion:^(BOOL granted, BOOL firstTime) {
+        if (granted) {
+            [YJPermissionPhotos authorizeWithCompletion:^(BOOL granted, BOOL firstTime) {
+                if (granted) {
+                    [self setUpCamera];
+                }
+                else{
+                    //需要获取相册权限
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请开启相册权限" delegate:nil  cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+                    [alertView show];
+                    
+                }
+            }];
+            
+        }else{
+            // 需要获取相机权限
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请开启相机权限" delegate:nil  cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+            [alertView show];
+        }
+        
+    }];
+    
+   
     [self setUpCollectionView];
 }
 #pragma mark - setup
@@ -68,12 +93,60 @@
     __weak typeof(self) weakSelf = self;
     [_camera takePhotoImageWithComplete:^(UIImage *originImage, NSError *error) {
         if(originImage){
-            [weakSelf.takeImages addObject:originImage];
-            [weakSelf.collectionView reloadData];
-            [weakSelf.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:weakSelf.takeImages.count-1 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+            
+            
+            //保存图片到相册
+            [weakSelf saveImageToPhotoLibrary:originImage complete:^(PHAsset *asset) {
+                
+                id<YJImageInputProtocol> model = [[YJImageModel alloc] initWithAsset:asset];
+                [weakSelf.takeImages addObject:model];
+                [weakSelf.collectionView reloadData];
+                [weakSelf.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:weakSelf.takeImages.count-1 inSection:0] atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+            }];
+            
+            
+          
         }
     }];
 }
+
+
+#pragma mark - private
+- (void)saveImageToPhotoLibrary:(UIImage*)image complete:(void(^)(PHAsset*asset))complete
+{
+    NSMutableArray *imageIds = [NSMutableArray array];
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        //写入图片到相册
+        PHAssetChangeRequest *req = [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+        //记录本地标识，等待完成后取到相册中的图片对象
+        [imageIds addObject:req.placeholderForCreatedAsset.localIdentifier];
+        
+    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+        
+        NSLog(@"success = %d, error = %@", success, error);
+        
+        if (success)
+        {
+            //成功后取相册中的图片对象
+            __block PHAsset *imageAsset = nil;
+            PHFetchResult *result = [PHAsset fetchAssetsWithLocalIdentifiers:imageIds options:nil];
+            [result enumerateObjectsUsingBlock:^(PHAsset * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                
+                imageAsset = obj;
+                *stop = YES;
+                
+            }];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                complete(imageAsset);
+            });
+        }
+        
+    }];
+}
+
+
+
+
 
 - (IBAction)cancleAction:(UIButton *)sender {
     if (self.delegate&&[self.delegate respondsToSelector:@selector(mulCameraViewControllerDidCancel:)]) {
@@ -101,8 +174,8 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YJStillImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJStillImageCell" forIndexPath:indexPath];
-    UIImage *image =  self.takeImages[indexPath.row];
-    [cell setCellWithImage:image];
+    id<YJImageInputProtocol> imageModel =  self.takeImages[indexPath.row];
+    [cell setCellWithImageModel:imageModel];
     cell.delegate = self;
     return cell;
 }

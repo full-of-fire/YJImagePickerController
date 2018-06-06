@@ -8,8 +8,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "YJImageInputProtocol.h"
-@interface YJImageModel : NSObject
+@interface YJImageModel : NSObject<YJImageInputProtocol>
 @property(strong,nonatomic) UIImage *originImage;
 @property(strong,nonatomic) PHAsset *imageAsset;
 @property(strong,nonatomic) NSURL *imageURL;
+
+- (instancetype)initWithAsset:(PHAsset*)asset;
+- (instancetype)initWithURL:(NSURL*)URL;
+- (instancetype)initWithImage:(UIImage*)image;
+
+
+
 @end

@@ -18,4 +18,27 @@
     }
     return self;
 }
+
+- (instancetype)initWithAsset:(PHAsset*)asset {
+    self = [super init];
+    if (self) {
+        _imageAsset = asset;
+    }
+    return self;
+}
+- (instancetype)initWithURL:(NSURL*)URL {
+    self = [super init];
+    if (self) {
+        _imageURL = URL;
+    }
+    return self;
+}
+- (instancetype)initWithImage:(UIImage*)image {
+    self = [super init];
+    if (self) {
+        _originImage = image;
+    }
+    return self;
+}
+
 @end
