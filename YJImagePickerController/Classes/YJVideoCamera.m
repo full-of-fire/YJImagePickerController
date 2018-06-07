@@ -106,7 +106,7 @@
     _prewView = preView;
     if (![_captureSession isRunning]) {
         AVCaptureVideoPreviewLayer *layer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_captureSession];
-        layer.frame = preView.bounds;
+        layer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height -preView.frame.origin.y);
         layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         [preView.layer insertSublayer:layer atIndex:0];
         [_captureSession startRunning];
