@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJImagePickerController'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'iOS8以上一个简单图片选择封装,支持拍照和相册选择'
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
