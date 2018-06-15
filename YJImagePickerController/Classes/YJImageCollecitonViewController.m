@@ -137,12 +137,12 @@
 - (IBAction)finishAction:(UIButton *)sender {
     //点击完成
     YJImagePickerController *picker = (YJImagePickerController*)self.navigationController;
-    NSMutableArray *pickedImages = [NSMutableArray array];
-    NSMutableArray *selectdAssets = [[YJPhotoManager sharedInstance] selectedAsset];
-    for (int i = 0; i<selectdAssets.count; i++) {
-        id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:selectdAssets[i]];
-        [pickedImages addObject:imageModel];
-    }
+    NSMutableArray *pickedImages = [[YJPhotoManager sharedInstance] selectedAsset];
+//    NSMutableArray *selectdAssets = [[YJPhotoManager sharedInstance] selectedAsset];
+//    for (int i = 0; i<selectdAssets.count; i++) {
+//        id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:selectdAssets[i]];
+//        [pickedImages addObject:imageModel];
+//    }
    
     
     if (picker.pickDelegate&&[picker.pickDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingImages:)]) {

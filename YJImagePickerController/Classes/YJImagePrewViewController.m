@@ -112,13 +112,15 @@ const CGFloat kTabBarHeight = 49;
 
 - (void)updateSelectButtonState{
     YJImageModel *model = self.photoList[self.index];
-     _selectButton.selected = model.selected;
-    NSString *buttonTitle = [NSString stringWithFormat:@"%ld", model.selectIndex];
-    if (model.selectIndex == 0)
-    {
-        buttonTitle = nil;
+    if ([model isKindOfClass:[YJImageModel class]]) {
+        _selectButton.selected = model.selected;
+        NSString *buttonTitle = [NSString stringWithFormat:@"%ld", model.selectIndex];
+        if (model.selectIndex == 0)
+        {
+            buttonTitle = nil;
+        }
+        [_selectButton setTitle:model.selected ? buttonTitle : nil forState:0];
     }
-     [_selectButton setTitle:model.selected ? buttonTitle : nil forState:0];
 }
 
 - (void)addSubViews{
@@ -137,12 +139,12 @@ const CGFloat kTabBarHeight = 49;
     [_tabBar setFinishButtonClick:^{
         NSLog(@"结束");
         YJImagePickerController *picker = (YJImagePickerController*)weakSelf.navigationController;
-        NSMutableArray *pickedImages = [NSMutableArray array];
-        NSMutableArray *selectdAssets = [[YJPhotoManager sharedInstance] selectedAsset];
-        for (int i = 0; i<selectdAssets.count; i++) {
-            id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:selectdAssets[i]];
-            [pickedImages addObject:imageModel];
-        }
+        NSMutableArray *pickedImages = [[YJPhotoManager sharedInstance] selectedAsset];
+//        NSMutableArray *selectdAssets = [[YJPhotoManager sharedInstance] selectedAsset];
+//        for (int i = 0; i<selectdAssets.count; i++) {
+//            id<YJImageInputProtocol> imageModel = [[YJImageModel alloc] initWithAsset:selectdAssets[i]];
+//            [pickedImages addObject:imageModel];
+//        }
         if (picker.pickDelegate&&[picker.pickDelegate respondsToSelector:@selector(imagePickerController:didFinishPickingImages:)]) {
             [picker.pickDelegate imagePickerController:picker didFinishPickingImages:[pickedImages copy]];
         }
