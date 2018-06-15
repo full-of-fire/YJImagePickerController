@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YJImageModel.h"
 @class PHAsset;
 @interface YJImageCollectionViewCell : UICollectionViewCell
 /** 选中点击回调 */
 @property (nonatomic,copy) void(^cellSelectButtonClick)(void);
 - (void)setCellWithAsset:(PHAsset*)asset;
+
+- (void)setCellWithImageModel:(YJImageModel*)model;
 @end

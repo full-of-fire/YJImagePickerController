@@ -26,4 +26,6 @@
 
 + (CGFloat)yj_screenWidth;
 + (CGFloat)yj_screenHeight;
+- (void)addSpringAnimation;
+
 @end

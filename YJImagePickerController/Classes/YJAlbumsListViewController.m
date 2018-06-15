@@ -40,6 +40,7 @@
 #pragma mark - viewLife
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [YJPhotoManager deallocInstance];
     
     [YJPermissionPhotos authorizeWithCompletion:^(BOOL granted, BOOL firstTime) {
         

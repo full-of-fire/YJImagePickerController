@@ -41,4 +41,14 @@
     return self;
 }
 
+
++ (instancetype)imageModelWithAsset:(PHAsset*)asset {
+    return [[YJImageModel alloc] initWithAsset:asset];
+}
++ (instancetype)imageModelWithURL:(NSURL*)URL {
+    return [[YJImageModel alloc] initWithURL:URL];
+}
++ (instancetype)imageModelWithImage:(UIImage*)image {
+    return [[YJImageModel alloc] initWithImage:image];
+}
 @end

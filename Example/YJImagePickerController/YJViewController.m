@@ -38,8 +38,8 @@
 //    [self showMulCamera];
 }
 - (IBAction)testAction:(UIButton *)sender {
-    [self showMulCamera];
-//    [self showImagePicker];
+//    [self showMulCamera];
+    [self showImagePicker];
 }
 
 - (void)showPreViewImage {

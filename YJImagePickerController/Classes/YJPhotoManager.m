@@ -9,12 +9,13 @@
 #import "YJPhotoManager.h"
 #import <Photos/Photos.h>
 #import "PHAssetCollection+YJAdd.h"
+#import "YJImageModel.h"
 const NSInteger KDefaultMaxSelectedCount = 10;
 static YJPhotoManager *instacne = nil;
 static dispatch_once_t onceToken;
 @interface YJPhotoManager()
 /** data */
-@property (nonatomic,strong) NSMutableArray<PHAsset*> *dataArray;
+@property (nonatomic,strong) NSMutableArray *dataArray;
 /** 最大选中相册 */
 @property (nonatomic,assign) NSInteger maxSelectCount;
 @end
@@ -34,36 +35,50 @@ static dispatch_once_t onceToken;
     onceToken = 0;
 }
 
-- (NSMutableArray<PHAsset*>*)selectedAsset{
+- (NSMutableArray*)selectedAsset{
     return self.dataArray;
 }
 
-- (void)addAsset:(PHAsset*)asset{
+- (void)addAsset:(id)asset{
     if (!asset) {
         return;
     }
-    [self.dataArray addObject:asset];
+    
+    YJImageModel *imageModel = (YJImageModel*)asset;
+    imageModel.selected = YES;
+    imageModel.selectIndex = self.dataArray.count + 1;
+    [self.dataArray addObject:imageModel];
 }
-- (void)removeAsset:(PHAsset*)asset{
+- (void)removeAsset:(id)asset{
     if (!asset) {
         return;
     }
     if (![_dataArray containsObject:asset]) {
         return;
     }
+    
+    YJImageModel *imageModel = (YJImageModel*)asset;
+    imageModel.selected = NO;
     [self.dataArray removeObject:asset];
+    for (YJImageModel *model in self.dataArray) {
+        if (model.selectIndex>imageModel.selectIndex) {
+            model.selectIndex -=1;
+        }
+    }
+    
+   
 }
 - (void)removeAllAssets{
     [self.dataArray removeAllObjects];
 }
-- (BOOL)containsAsset:(PHAsset*)asset{
+- (BOOL)containsAsset:(id)asset{
 
     if (!asset) {
         return NO;
     }
-    if (![asset isKindOfClass:[PHAsset class]]) {
-        return NO;
-    }
+//    if (![asset isKindOfClass:[PHAsset class]]) {
+//        return NO;
+//    }
     return [[self selectedAsset] containsObject:asset];
 }
 

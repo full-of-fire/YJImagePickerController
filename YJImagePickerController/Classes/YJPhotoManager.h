@@ -13,9 +13,9 @@
 + (void)deallocInstance;
 
 - (NSArray*)fetchAllAlbumsList;
-- (NSMutableArray<PHAsset*>*)selectedAsset;
-- (void)addAsset:(PHAsset*)asset;
-- (void)removeAsset:(PHAsset*)asset;
+- (NSMutableArray*)selectedAsset;
+- (void)addAsset:(id)asset;
+- (void)removeAsset:(id)asset;
 - (void)removeAllAssets;
-- (BOOL)containsAsset:(PHAsset*)asset;
+- (BOOL)containsAsset:(id)asset;
 @end

@@ -12,10 +12,15 @@
 @property(strong,nonatomic) UIImage *originImage;
 @property(strong,nonatomic) PHAsset *imageAsset;
 @property(strong,nonatomic) NSURL *imageURL;
-
+@property(assign,nonatomic,getter=isSelected) BOOL selected;
+@property(assign,nonatomic) NSUInteger selectIndex;
 - (instancetype)initWithAsset:(PHAsset*)asset;
 - (instancetype)initWithURL:(NSURL*)URL;
 - (instancetype)initWithImage:(UIImage*)image;
+
++ (instancetype)imageModelWithAsset:(PHAsset*)asset;
++ (instancetype)imageModelWithURL:(NSURL*)URL;
++ (instancetype)imageModelWithImage:(UIImage*)image;
 
 
 

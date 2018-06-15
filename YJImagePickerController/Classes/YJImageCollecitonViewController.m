@@ -20,7 +20,7 @@
 @interface YJImageCollecitonViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 /** 包含图像Model的数组 */
-@property (nonatomic,strong) NSArray<PHAsset*> *photoList;
+@property (nonatomic,strong) NSArray *photoList;
 /** 相册集合 */
 @property (nonatomic,strong) PHAssetCollection*assetCollection;
 @property (weak, nonatomic) IBOutlet UIButton *previewButton;
@@ -80,7 +80,8 @@
     PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:self.assetCollection options:nil];
     NSMutableArray *arr = [NSMutableArray array];
     for (PHAsset *asset in result) {
-        [arr addObject:asset];
+        YJImageModel *imageModel = [YJImageModel imageModelWithAsset:asset];
+        [arr addObject:imageModel];
     }
     self.photoList = [arr copy];
 }
@@ -128,7 +129,7 @@
     YJImagePrewViewController *preViewVC = [[YJImagePrewViewController alloc] init];
     preViewVC.index = self.lasetSeletedIndex;
     //
-    preViewVC.photoList = [self p_covertAssetsToImageModels];;
+    preViewVC.photoList = self.photoList;
     [self.navigationController pushViewController:preViewVC animated:YES];
     
 }
@@ -170,11 +171,14 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     YJImageCollectionViewCell *cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"YJImageCollectionViewCell" forIndexPath:indexPath];
-    [cell setCellWithAsset:self.photoList[indexPath.row]];
+    [cell setCellWithImageModel:self.photoList[indexPath.row]];
     __weak typeof(self) weakSelf = self;
     [cell setCellSelectButtonClick:^{
         //更新底部状态栏
         [weakSelf setUpBottomView];
+        
+        [weakSelf.collectionView reloadData];
+       
         weakSelf.lasetSeletedIndex = indexPath.row;
     }];
     return cell;
@@ -184,20 +188,22 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     YJImagePrewViewController *preViewVC = [[YJImagePrewViewController alloc] init];
     preViewVC.index = indexPath.row;
-    preViewVC.photoList =  [self p_covertAssetsToImageModels];
+    preViewVC.photoList =  self.photoList;
     [self.navigationController pushViewController:preViewVC animated:YES];
 }
 
-#pragma mark - private
-- (NSArray*)p_covertAssetsToImageModels{
-    NSMutableArray *imageModels = [NSMutableArray array];
-    for (PHAsset *asset in self.photoList) {
-        YJImageModel *model = [[YJImageModel alloc] init];
-        model.imageAsset = asset;
-        [imageModels addObject:model];
-    }
-    return imageModels.copy;
-}
+//#pragma mark - private
+//- (NSArray*)p_covertAssetsToImageModels{
+//    NSMutableArray *imageModels = [NSMutableArray array];
+//    
+//    for (int i = 0; i<self.photoList.count; i++) {
+//        YJImageModel *model = [[YJImageModel alloc] init];
+//        model.imageAsset = self.photoList[i];
+//        [imageModels addObject:model];
+//    }
+//
+//    return imageModels.copy;
+//}
 
 
 @end

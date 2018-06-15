@@ -15,6 +15,7 @@
 #import "PHAsset+YJAdd.h"
 #import "NSBundle+YJAdd.h"
 #import "YJImageModel.h"
+#import "UIView+YJAdd.h"
 const CGFloat kNaviBarHeight = 64;
 const CGFloat kTabBarHeight = 49;
 @interface YJImagePrewViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -52,11 +53,11 @@ const CGFloat kTabBarHeight = 49;
     
     UIButton *selectButton = [UIButton buttonWithType:UIButtonTypeCustom];
     NSString *unSelectPath = [[NSBundle yj_frameworkBundleWithClass:self.class] pathForResource:@"unSelect" ofType:@"png"];
-    NSString *selectPath = [[NSBundle yj_frameworkBundleWithClass:self.class] pathForResource:@"select" ofType:@"png"];
-    [selectButton setImage:[[UIImage alloc] initWithContentsOfFile:unSelectPath] forState:UIControlStateNormal];
-    [selectButton setImage:[[UIImage alloc] initWithContentsOfFile:selectPath] forState:UIControlStateSelected];
+    NSString *selectPath = [[NSBundle yj_frameworkBundleWithClass:self.class] pathForResource:@"photo_number_icon" ofType:@"png"];
+    [selectButton setBackgroundImage:[[UIImage alloc] initWithContentsOfFile:unSelectPath] forState:UIControlStateNormal];
+    [selectButton setBackgroundImage:[[UIImage alloc] initWithContentsOfFile:selectPath] forState:UIControlStateSelected];
     [selectButton addTarget:self action:@selector(selectAction:) forControlEvents:UIControlEventTouchUpInside];
-    selectButton.frame = CGRectMake(0, 0, 44, 44);
+    selectButton.frame = CGRectMake(0, 0, 30, 30);
     _selectButton = selectButton;
     [self updateSelectButtonState];
     UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithCustomView:selectButton];
@@ -110,7 +111,14 @@ const CGFloat kTabBarHeight = 49;
 }
 
 - (void)updateSelectButtonState{
-     _selectButton.selected = [[YJPhotoManager sharedInstance] containsAsset:self.photoList[self.index]];
+    YJImageModel *model = self.photoList[self.index];
+     _selectButton.selected = model.selected;
+    NSString *buttonTitle = [NSString stringWithFormat:@"%ld", model.selectIndex];
+    if (model.selectIndex == 0)
+    {
+        buttonTitle = nil;
+    }
+     [_selectButton setTitle:model.selected ? buttonTitle : nil forState:0];
 }
 
 - (void)addSubViews{
@@ -174,18 +182,18 @@ const CGFloat kTabBarHeight = 49;
 
 #pragma mark - actions
 - (void)selectAction:(UIButton*)btn{
+    [btn addSpringAnimation];
     btn.selected = !btn.selected;
     YJImageModel *imageModel = self.photoList[self.index];
+    imageModel.selected = btn.selected;
     if (btn.selected) {
-        if (imageModel.imageAsset) {
-            [[YJPhotoManager sharedInstance] addAsset:imageModel.imageAsset];
-        }
+        [[YJPhotoManager sharedInstance] addAsset:imageModel];
     }
     else{
-        if (imageModel.imageAsset) {
-            [[YJPhotoManager sharedInstance] removeAsset:imageModel.imageAsset];
-        }
+    
+        [[YJPhotoManager sharedInstance] removeAsset:imageModel];
     }
+    [self updateSelectButtonState];
     [self setTabNums];
 }
 

@@ -79,4 +79,19 @@
     return [UIScreen mainScreen].bounds.size.height;
 }
 
+- (void)addSpringAnimation
+{
+    if (@available(iOS 9.0, *))
+    {
+        CASpringAnimation *spring = [CASpringAnimation animationWithKeyPath:@"transform.scale"];
+        spring.toValue = @(2);
+        spring.removedOnCompletion = NO;
+        spring.duration = spring.settlingDuration;
+        [self.layer addAnimation:spring forKey:nil];
+        spring.toValue = @(1);
+        spring.duration = spring.settlingDuration;
+        [self.layer addAnimation:spring forKey:nil];
+    }
+}
+
 @end
